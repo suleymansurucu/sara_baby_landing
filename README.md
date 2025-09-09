@@ -1,6 +1,6 @@
-# untitled
+# **Sara Baby Tracker & Sounds – Landing (Flutter Web)**
 
-A new Flutter project.
+A single-page, responsive landing site for the open-source Sara Baby app. Built with Flutter Web, hosted on Firebase.
 
 ## Getting Started
 
