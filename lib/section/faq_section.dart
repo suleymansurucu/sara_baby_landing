@@ -7,9 +7,10 @@ class FAQSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final faqs = [
-      ('Is it free?', 'Yes. The app is open-source and free to use.'),
-      ('Does it work offline?', 'Core tracking works offline; sync resumes when online.'),
-      ('Is data private?', 'We follow best practices and never sell personal data.'),
+      ('Is it free?', 'Yes. The app and this landing site are open-source.'),
+      ('Does it work offline?', 'Core tracking works offline; data syncs when back online.'),
+      ('How about privacy?', 'We follow best practices; no selling of personal data. See our repo for details.'),
+      ('Can I contribute?', 'Absolutely. Check GitHub issues and CONTRIBUTING.md to get started.'),
     ];
 
     return Padding(
