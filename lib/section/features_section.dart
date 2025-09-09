@@ -7,14 +7,13 @@ class FeaturesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = [
-      ('Feeding Tracker', 'Breastfeeding (left/right), bottle (ml/oz), pumping.'),
-      ('Sleep Tracker', 'Start/stop timers, soothing sounds, duration analytics.'),
-      ('Diaper Log', 'Wet / Dirty / Mixed with quick actions.'),
-      ('Growth & Milestones', 'Monthly checklist (i18n), weight & height.'),
-      ('Teething & Vaccination', 'Simple, chronological record.'),
-      ('Open-Source', 'Clean architecture, community-driven.'),
+      ('Feeding Tracker', 'Breastfeeding (left/right), bottle (ml/oz), and pumping — quick entry with smart defaults.'),
+      ('Sleep Tracker', 'One-tap start/stop, relaxing sounds, daily/weekly duration insights.'),
+      ('Diaper Log', 'Wet / Dirty / Mixed with shortcuts and editable history.'),
+      ('Growth & Milestones', 'Monthly checklist (multi-language), weight/height tracking with trends.'),
+      ('Teething & Vaccination', 'Simple timeline to record dates, notes, and reminders.'),
+      ('Open-Source Quality', 'Flutter + clean architecture, tests, CI/CD, and Firebase-ready.'),
     ];
-
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 72),
       child: MaxWidth(
