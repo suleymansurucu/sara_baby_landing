@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/core/max_width.dart';
+import 'max_width.dart';
 
 class ScreensSection extends StatefulWidget {
   const ScreensSection({super.key});
@@ -9,8 +9,6 @@ class ScreensSection extends StatefulWidget {
 }
 
 class _ScreensSectionState extends State<ScreensSection> {
-  final _controller = PageController(viewportFraction: 0.8);
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -112,23 +110,6 @@ class _ScreensSectionState extends State<ScreensSection> {
               ),
             ),
           ),
-          Positioned(
-            top: 200,
-            left: 50,
-            child: Container(
-              width: 100,
-              height: 100,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: RadialGradient(
-                  colors: [
-                    Theme.of(context).colorScheme.tertiary.withOpacity(0.06),
-                    Colors.transparent,
-                  ],
-                ),
-              ),
-            ),
-          ),
           // Main content
           MaxWidth(
             child: Column(
@@ -206,7 +187,7 @@ class _ScreensSectionState extends State<ScreensSection> {
             itemBuilder: (context, index) {
               final screenshot = screenshots[index];
               return Container(
-                width: screenWidth * 0.75, // Show more of the next card
+                width: screenWidth * 0.75,
                 margin: EdgeInsets.only(right: screenWidth < 480 ? 16 : 20),
                 child: _buildScreenshotCard(context, screenshot),
               );
@@ -214,7 +195,6 @@ class _ScreensSectionState extends State<ScreensSection> {
           ),
         ),
         const SizedBox(height: 20),
-        // Enhanced scroll indicator
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
@@ -250,49 +230,6 @@ class _ScreensSectionState extends State<ScreensSection> {
     );
   }
 
-  Widget _buildCarouselView(BuildContext context, List<ScreenshotData> screenshots) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 450, // Reduced height from 600 to 450 (25% smaller)
-          child: PageView.builder(
-            controller: _controller,
-            itemCount: screenshots.length,
-            itemBuilder: (context, index) {
-              final screenshot = screenshots[index];
-              return Container(
-                margin: const EdgeInsets.symmetric(horizontal: 12),
-                child: _buildScreenshotCard(context, screenshot),
-              );
-            },
-          ),
-        ),
-        const SizedBox(height: 24),
-        // Enhanced dots indicator
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: List.generate(
-            screenshots.length,
-            (index) => Container(
-              width: 10,
-              height: 10,
-              margin: const EdgeInsets.symmetric(horizontal: 4),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: LinearGradient(
-                  colors: [
-                    Theme.of(context).colorScheme.primary.withOpacity(0.3),
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.3),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
   Widget _buildGridView(BuildContext context, List<ScreenshotData> screenshots) {
     final screenWidth = MediaQuery.of(context).size.width;
     
@@ -314,18 +251,17 @@ class _ScreensSectionState extends State<ScreensSection> {
 
   int _getGridCrossAxisCount(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    if (width < 640) return 1; // Mobile - single column
-    if (width < 900) return 2; // Small tablet - 2 columns
-    if (width < 1200) return 2; // Large tablet - 2 columns  
-    return 2; // Desktop - 2x2 grid (2 columns)
+    if (width < 640) return 1;
+    if (width < 900) return 2;
+    if (width < 1200) return 2;
+    return 2;
   }
 
   double _getAspectRatio(double width) {
-    // Simple aspect ratios for phone screenshots
-    if (width < 640) return 0.8; // Mobile - good for phone screenshots
-    if (width < 900) return 0.8; // Small tablet - same as mobile
-    if (width < 1200) return 0.8; // Large tablet - same as mobile
-    return 0.8; // Desktop - same ratio for consistency
+    if (width < 640) return 0.8;
+    if (width < 900) return 0.8;
+    if (width < 1200) return 0.8;
+    return 0.8;
   }
 
   Widget _buildPhoneMockup(BuildContext context, String imageAsset) {
@@ -334,8 +270,8 @@ class _ScreensSectionState extends State<ScreensSection> {
       height: double.infinity,
       child: Center(
         child: Container(
-          width: 200, // Fixed width for phone mockup
-          height: 400, // Fixed height for phone mockup (2:1 ratio)
+          width: 200,
+          height: 400,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
             boxShadow: [
@@ -348,7 +284,6 @@ class _ScreensSectionState extends State<ScreensSection> {
           ),
           child: Stack(
             children: [
-              // Phone frame
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
@@ -359,8 +294,6 @@ class _ScreensSectionState extends State<ScreensSection> {
                   color: Colors.grey[100],
                 ),
               ),
-              
-              // Screen content
               Padding(
                 padding: const EdgeInsets.all(6),
                 child: ClipRRect(
@@ -380,30 +313,9 @@ class _ScreensSectionState extends State<ScreensSection> {
     );
   }
 
-  void _showImageGallery(BuildContext context, String currentImage) {
-    final screenshots = [
-      'assets/images/activity.png',
-      'assets/images/history.png', 
-      'assets/images/recipe.png',
-      'assets/images/sound.png',
-    ];
-    
-    final initialIndex = screenshots.indexOf(currentImage);
-    
-    showDialog(
-      context: context,
-      barrierDismissible: true,
-      builder: (context) => ImageGalleryModal(
-        images: screenshots,
-        initialIndex: initialIndex >= 0 ? initialIndex : 0,
-      ),
-    );
-  }
-
   Widget _buildScreenshotCard(BuildContext context, ScreenshotData screenshot) {
     final screenWidth = MediaQuery.of(context).size.width;
     final isMobile = screenWidth < 640;
-    final isTablet = screenWidth >= 640 && screenWidth < 1024;
     
     return HoverableScreenshotCard(
       gradient: screenshot.gradient,
@@ -419,21 +331,15 @@ class _ScreensSectionState extends State<ScreensSection> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Phone mockup with screenshot
             Expanded(
               flex: 4,
-              child: GestureDetector(
-                onTap: () => _showImageGallery(context, screenshot.imageAsset),
-                child: Container(
-                  margin: EdgeInsets.all(isMobile ? 12 : 16),
-                  child: _buildPhoneMockup(context, screenshot.imageAsset),
-                ),
+              child: Container(
+                margin: EdgeInsets.all(isMobile ? 12 : 16),
+                child: _buildPhoneMockup(context, screenshot.imageAsset),
               ),
             ),
-
-            // Screenshot info
             Container(
-              height: isMobile ? 100 : 110, // Balanced height matching hero section proportions
+              height: isMobile ? 100 : 110,
               padding: EdgeInsets.fromLTRB(
                 isMobile ? 16 : 20,
                 isMobile ? 12 : 16,
@@ -536,201 +442,6 @@ class _HoverableScreenshotCardState extends State<HoverableScreenshotCard> {
                   ],
                 ),
           child: widget.child,
-        ),
-      ),
-    );
-  }
-}
-
-class ImageGalleryModal extends StatefulWidget {
-  final List<String> images;
-  final int initialIndex;
-
-  const ImageGalleryModal({
-    super.key,
-    required this.images,
-    required this.initialIndex,
-  });
-
-  @override
-  State<ImageGalleryModal> createState() => _ImageGalleryModalState();
-}
-
-class _ImageGalleryModalState extends State<ImageGalleryModal> {
-  late PageController _pageController;
-  late int _currentIndex;
-
-  @override
-  void initState() {
-    super.initState();
-    _currentIndex = widget.initialIndex;
-    _pageController = PageController(initialPage: widget.initialIndex);
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      child: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.9),
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Stack(
-          children: [
-            // Close button
-            Positioned(
-              top: 40,
-              right: 20,
-              child: GestureDetector(
-                onTap: () => Navigator.of(context).pop(),
-                child: Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: const Icon(
-                    Icons.close,
-                    color: Colors.white,
-                    size: 24,
-                  ),
-                ),
-              ),
-            ),
-            
-            // Image viewer
-            Center(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.height * 0.8,
-                child: PageView.builder(
-                  controller: _pageController,
-                  onPageChanged: (index) {
-                    setState(() {
-                      _currentIndex = index;
-                    });
-                  },
-                  itemCount: widget.images.length,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 20),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.3),
-                            blurRadius: 20,
-                            offset: const Offset(0, 10),
-                          ),
-                        ],
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(16),
-                        child: Image.asset(
-                          widget.images[index],
-                          fit: BoxFit.contain,
-                          width: double.infinity,
-                          height: double.infinity,
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ),
-            
-            // Page indicator
-            Positioned(
-              bottom: 40,
-              left: 0,
-              right: 0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(
-                  widget.images.length,
-                  (index) => Container(
-                    width: 8,
-                    height: 8,
-                    margin: const EdgeInsets.symmetric(horizontal: 4),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: _currentIndex == index
-                          ? Colors.white
-                          : Colors.white.withOpacity(0.3),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            
-            // Navigation arrows
-            if (_currentIndex > 0)
-              Positioned(
-                left: 20,
-                top: 0,
-                bottom: 0,
-                child: Center(
-                  child: GestureDetector(
-                    onTap: () {
-                      _pageController.previousPage(
-                        duration: const Duration(milliseconds: 300),
-                        curve: Curves.easeInOut,
-                      );
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: const Icon(
-                        Icons.chevron_left,
-                        color: Colors.white,
-                        size: 28,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            
-            if (_currentIndex < widget.images.length - 1)
-              Positioned(
-                right: 20,
-                top: 0,
-                bottom: 0,
-                child: Center(
-                  child: GestureDetector(
-                    onTap: () {
-                      _pageController.nextPage(
-                        duration: const Duration(milliseconds: 300),
-                        curve: Curves.easeInOut,
-                      );
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.2),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: const Icon(
-                        Icons.chevron_right,
-                        color: Colors.white,
-                        size: 28,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-          ],
         ),
       ),
     );

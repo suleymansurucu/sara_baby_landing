@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/core/max_width.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'max_width.dart';
 
 class DeveloperSection extends StatelessWidget {
   const DeveloperSection({super.key});
@@ -98,7 +98,7 @@ class DeveloperSection extends StatelessWidget {
 
                     // Developer bio
                     Text(
-                      'Flutter/Dart developer focused on clean architecture, Firebase, and CI/CD.',
+                      'With over 4 years of professional experience, I specialize in building performance-driven, scalable, and clean-code cross-platform mobile applications using Flutter and Dart. I focus on creating innovative solutions to real-world problems, providing technical leadership, and contributing to the open-source community. My deep knowledge in this field is something I enjoy sharing through my blog posts and open-source projects.',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                         height: 1.5,

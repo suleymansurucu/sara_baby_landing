@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/core/max_width.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'max_width.dart';
 
 class FooterSection extends StatelessWidget {
   const FooterSection({super.key});
@@ -359,7 +359,6 @@ class FooterSection extends StatelessWidget {
         'mailto:suleymansurucu95@gmail.com',
         isMobile: isMobile,
       ),
-
     ];
   }
 

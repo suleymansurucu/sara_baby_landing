@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:untitled/core/max_width.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'max_width.dart';
+import '../../domain/entities/app_info.dart';
 
 class HeroSection extends StatelessWidget {
-  const HeroSection({super.key});
+  final AppInfo appInfo;
+  
+  const HeroSection({super.key, required this.appInfo});
 
   @override
   Widget build(BuildContext context) {
@@ -34,15 +36,10 @@ class HeroSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-
-        // Device mockup
         _buildDeviceMockup(context),
-
         const SizedBox(height: 32),
-
-        // App title and description
         Text(
-          'Sara Baby Tracker & Sounds',
+          appInfo.name,
           style: Theme.of(context).textTheme.displaySmall?.copyWith(
             color: Colors.white,
             height: 1.1,
@@ -51,8 +48,6 @@ class HeroSection extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 20),
-        
-        // Separator line
         Container(
           width: 80,
           height: 1,
@@ -61,11 +56,9 @@ class HeroSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(1),
           ),
         ),
-        
         const SizedBox(height: 20),
-        
         Text(
-          'All-in-one baby care: Track, Feed, Sleep, and Grow Together.',
+          appInfo.tagline,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             color: Colors.white.withOpacity(0.95),
             height: 1.4,
@@ -73,8 +66,6 @@ class HeroSection extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 16),
-        
-        // Separator line
         Container(
           width: 100,
           height: 1,
@@ -83,40 +74,33 @@ class HeroSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(1),
           ),
         ),
-        
         const SizedBox(height: 16),
-        
         Text(
-          'Sara is an open-source Flutter app that helps parents and caregivers track daily baby activities, share responsibilities, and create a calm environment with soothing sleep sounds and baby food recipes.',
+          appInfo.description,
           style: Theme.of(context).textTheme.bodyLarge?.copyWith(
             color: Colors.white.withOpacity(0.9),
             height: 1.5,
           ),
           textAlign: TextAlign.center,
         ),
-
         const SizedBox(height: 32),
-
-        // CTAs
         _buildCTAs(context),
-
         const SizedBox(height: 24),
-
-        // Open source note
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Text(
-            '✨ Fully Open Source',
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Colors.white,
-              fontWeight: FontWeight.w500,
+        if (appInfo.isOpenSource)
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Text(
+              '✨ Fully Open Source',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
-        ),
       ],
     );
   }
@@ -124,17 +108,14 @@ class HeroSection extends StatelessWidget {
   Widget _buildDesktopLayout(BuildContext context) {
     return Row(
       children: [
-        // Left side - Content
         Expanded(
           flex: 5,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
-              // App title
               Text(
-                'Sara Baby Tracker & Sounds',
+                appInfo.name,
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                   color: Colors.white,
                   height: 1.1,
@@ -142,8 +123,6 @@ class HeroSection extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              
-              // Separator line
               Container(
                 width: 100,
                 height: 1,
@@ -152,20 +131,15 @@ class HeroSection extends StatelessWidget {
                   borderRadius: BorderRadius.circular(1),
                 ),
               ),
-              
               const SizedBox(height: 20),
-
-              // Value proposition
               Text(
-                'All-in-one baby care: Track, Feed, Sleep, and Grow Together.',
+                appInfo.tagline,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Colors.white.withOpacity(0.95),
                   height: 1.4,
                 ),
               ),
               const SizedBox(height: 16),
-              
-              // Separator line
               Container(
                 width: 120,
                 height: 1,
@@ -174,47 +148,36 @@ class HeroSection extends StatelessWidget {
                   borderRadius: BorderRadius.circular(1),
                 ),
               ),
-              
               const SizedBox(height: 16),
-
-              // Description
               Text(
-                'Sara is an open-source Flutter app that helps parents and caregivers track daily baby activities, share responsibilities, and create a calm environment with soothing sleep sounds and baby food recipes.',
+                appInfo.description,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: Colors.white.withOpacity(0.9),
                   height: 1.5,
                 ),
               ),
-
               const SizedBox(height: 32),
-
-              // CTAs
               _buildCTAs(context),
-
               const SizedBox(height: 24),
-
-              // Open source note
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  '✨ Fully Open Source',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
+              if (appInfo.isOpenSource)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    '✨ Fully Open Source',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
-              ),
             ],
           ),
         ),
-
         const SizedBox(width: 80),
-
-        // Right side - Device mockup
         Expanded(
           flex: 4,
           child: Center(
@@ -241,7 +204,6 @@ class HeroSection extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // Device frame (simplified iPhone-like)
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(32),
@@ -259,8 +221,6 @@ class HeroSection extends StatelessWidget {
               ),
             ),
           ),
-
-          // Screen content
           Padding(
             padding: const EdgeInsets.all(12),
             child: ClipRRect(
@@ -271,8 +231,6 @@ class HeroSection extends StatelessWidget {
               ),
             ),
           ),
-
-          // Notch
           Positioned(
             top: 0,
             left: 0,
@@ -300,9 +258,8 @@ class HeroSection extends StatelessWidget {
       runSpacing: 12,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        // App Store
         _HoverableButton(
-          onTap: () => launchUrl(Uri.parse('https://apps.apple.com/us/app/sara-baby-tracker-sounds/id6746516938')),
+          onTap: () => launchUrl(Uri.parse(appInfo.appStoreUrl)),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             decoration: BoxDecoration(
@@ -335,10 +292,8 @@ class HeroSection extends StatelessWidget {
             ),
           ),
         ),
-
-        // Google Play
         _HoverableButton(
-          onTap: () => launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.suleymansurucu.sarababy')),
+          onTap: () => launchUrl(Uri.parse(appInfo.googlePlayUrl)),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             decoration: BoxDecoration(
@@ -371,10 +326,8 @@ class HeroSection extends StatelessWidget {
             ),
           ),
         ),
-
-        // GitHub
         _HoverableButton(
-          onTap: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds')),
+          onTap: () => launchUrl(Uri.parse(appInfo.githubUrl)),
           child: OutlinedButton.icon(
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
@@ -384,7 +337,7 @@ class HeroSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds')),
+            onPressed: () => launchUrl(Uri.parse(appInfo.githubUrl)),
             icon: const Icon(Icons.code, size: 20),
             label: const Text('View GitHub'),
           ),
@@ -424,4 +377,3 @@ class _HoverableButtonState extends State<_HoverableButton> {
     );
   }
 }
-

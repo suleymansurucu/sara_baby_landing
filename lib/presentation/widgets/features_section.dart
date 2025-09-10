@@ -1,95 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/core/max_width.dart';
+import 'max_width.dart';
+import '../../domain/entities/feature.dart';
 
 class FeaturesSection extends StatelessWidget {
-  const FeaturesSection({super.key});
+  final List<Feature> features;
+  
+  const FeaturesSection({super.key, required this.features});
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
-    final features = [
-      FeatureData(
-        title: 'Feeding Tracker',
-        description: 'Track every feeding session with ease—breastfeeding, bottle feeding, and pumping.',
-        iconAsset: 'assets/images/feed.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFFFF6B9D), Color(0xFFC44569)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Sleep Tracker',
-        description: 'Monitor sleep with precise timers and built-in white noise to help your baby sleep.',
-        iconAsset: 'assets/images/sleep.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFF667EEA), Color(0xFF764BA2)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Diaper Log',
-        description: 'Quickly log wet, dirty, or mixed diapers with easy shortcuts and history.',
-        iconAsset: 'assets/images/diaper.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFFF093FB), Color(0xFFF5576C)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Growth & Milestones',
-        description: 'Log weight, height, and track milestones, teething, and vaccinations.',
-        iconAsset: 'assets/images/growth.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFF4ECDC4), Color(0xFF44A08D)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Relaxing Sounds',
-        description: 'Play soothing sounds and white noise to help your baby drift off.',
-        iconAsset: 'assets/images/sounds_icon.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFFA8E6CF), Color(0xFFDCEDC1)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Baby Recipes',
-        description: 'Discover healthy, age-filtered recipes with ingredients and instructions.',
-        iconAsset: 'assets/images/recipe_icon.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFFFFD93D), Color(0xFFFF8C42)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Activity History',
-        description: 'View a clear timeline of your baby\'s day with search and filter options.',
-        iconAsset: 'assets/images/activity_history.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFF667EEA), Color(0xFF764BA2)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-      FeatureData(
-        title: 'Shared Family Access',
-        description: 'Collaborate with caregivers and easily switch between multiple babies.',
-        iconAsset: 'assets/images/share_family_icon.png',
-        gradient: const LinearGradient(
-          colors: [Color(0xFFFF6B9D), Color(0xFFC44569)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
-    ];
 
     return Container(
       padding: EdgeInsets.symmetric(vertical: screenWidth < 640 ? 40 : 80),
@@ -98,7 +18,6 @@ class FeaturesSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Section header
             Container(
               margin: EdgeInsets.only(bottom: screenWidth < 640 ? 32 : 48),
               child: Column(
@@ -142,8 +61,6 @@ class FeaturesSection extends StatelessWidget {
                 ],
               ),
             ),
-
-            // Features grid
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
@@ -165,28 +82,39 @@ class FeaturesSection extends StatelessWidget {
   }
 
   int _getCrossAxisCount(double width) {
-    if (width < 480) return 1; // Very small mobile
-    if (width < 640) return 2; // Mobile - 2 columns
-    if (width < 900) return 2; // Small tablet
-    if (width < 1200) return 3; // Large tablet
-    return 4; // Desktop
+    if (width < 480) return 1;
+    if (width < 640) return 2;
+    if (width < 900) return 2;
+    if (width < 1200) return 3;
+    return 4;
   }
 
   double _getAspectRatio(double width) {
-    if (width < 480) return 1.6; // Very small mobile - more vertical
-    if (width < 640) return 1.0; // Mobile 2-column - square
-    if (width < 900) return 1.1; // Small tablet
-    if (width < 1200) return 1.0; // Large tablet - square
-    return 1.0; // Desktop - square
+    if (width < 480) return 1.6;
+    if (width < 640) return 1.0;
+    if (width < 900) return 1.1;
+    if (width < 1200) return 1.0;
+    return 1.0;
   }
 
-  Widget _buildFeatureCard(BuildContext context, FeatureData feature) {
+  Widget _buildFeatureCard(BuildContext context, Feature feature) {
     final screenWidth = MediaQuery.of(context).size.width;
     final isVerySmallMobile = screenWidth < 480;
     final isMobile = screenWidth < 640;
     
+    // Convert hex strings to Color objects
+    final gradientColors = feature.gradientColors.map((color) {
+      return Color(int.parse(color.replaceFirst('0x', '0xFF')));
+    }).toList();
+    
+    final gradient = LinearGradient(
+      colors: gradientColors,
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    );
+    
     return HoverableCard(
-      gradient: feature.gradient,
+      gradient: gradient,
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -199,12 +127,11 @@ class FeaturesSection extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Feature icon
               Container(
                 width: isVerySmallMobile ? 36 : (isMobile ? 40 : 48),
                 height: isVerySmallMobile ? 36 : (isMobile ? 40 : 48),
                 decoration: BoxDecoration(
-                  gradient: feature.gradient,
+                  gradient: gradient,
                   borderRadius: BorderRadius.circular(isVerySmallMobile ? 8 : (isMobile ? 10 : 12)),
                 ),
                 child: Padding(
@@ -216,8 +143,6 @@ class FeaturesSection extends StatelessWidget {
                 ),
               ),
               SizedBox(height: isVerySmallMobile ? 8 : (isMobile ? 10 : 16)),
-
-              // Feature title
               Text(
                 feature.title,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -229,8 +154,6 @@ class FeaturesSection extends StatelessWidget {
                 overflow: TextOverflow.visible,
               ),
               SizedBox(height: isVerySmallMobile ? 4 : (isMobile ? 5 : 8)),
-
-              // Feature description
               Text(
                 feature.description,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -311,18 +234,4 @@ class _HoverableCardState extends State<HoverableCard> {
       ),
     );
   }
-}
-
-class FeatureData {
-  final String title;
-  final String description;
-  final String iconAsset;
-  final LinearGradient gradient;
-
-  const FeatureData({
-    required this.title,
-    required this.description,
-    required this.iconAsset,
-    required this.gradient,
-  });
 }

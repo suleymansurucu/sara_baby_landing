@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/core/max_width.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'max_width.dart';
 
 class CTASection extends StatelessWidget {
   const CTASection({super.key});
