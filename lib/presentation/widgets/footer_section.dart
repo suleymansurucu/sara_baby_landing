@@ -295,7 +295,7 @@ class FooterSection extends StatelessWidget {
         context,
         'GitHub Repository',
         Icons.code,
-        'https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds',
+        'https://github.com/fluttergoo/open_baby_sara',
         isMobile: isMobile,
       ),
       const SizedBox(height: 8),
@@ -303,7 +303,7 @@ class FooterSection extends StatelessWidget {
         context,
         'Report Issues',
         Icons.bug_report,
-        'https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/issues',
+        'https://github.com/fluttergoo/open_baby_sara/issues',
         isMobile: isMobile,
       ),
       const SizedBox(height: 8),
@@ -311,7 +311,7 @@ class FooterSection extends StatelessWidget {
         context,
         'Feature Requests',
         Icons.lightbulb,
-        'https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/discussions',
+        'https://github.com/fluttergoo/open_baby_sara/discussions',
         isMobile: isMobile,
       ),
       const SizedBox(height: 8),
@@ -319,7 +319,7 @@ class FooterSection extends StatelessWidget {
         context,
         'Documentation',
         Icons.help,
-        'https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/wiki',
+        'https://github.com/fluttergoo/open_baby_sara/wiki',
         isMobile: isMobile,
       ),
     ];
@@ -346,15 +346,23 @@ class FooterSection extends StatelessWidget {
     return [
       _buildLinkButton(
         context,
+        'Community Founder',
+        Icons.person,
+        'https://github.com/fluttergoo',
+        isMobile: isMobile,
+      ),
+      const SizedBox(height: 8),
+      _buildLinkButton(
+        context,
         'LinkedIn',
-        Icons.business_center,
+        Icons.work,
         'https://www.linkedin.com/in/suleymansurucu/',
         isMobile: isMobile,
       ),
       const SizedBox(height: 8),
       _buildLinkButton(
         context,
-        'Email Support',
+        'Email',
         Icons.email,
         'mailto:suleymansurucu95@gmail.com',
         isMobile: isMobile,
@@ -400,19 +408,33 @@ class FooterSection extends StatelessWidget {
   Widget _buildMobileBottom(BuildContext context) {
     return Column(
       children: [
-        Text(
-          '© ${DateTime.now().year} Sara Baby Tracker & Sounds — Open Source',
-          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: Theme.of(context).colorScheme.onSurfaceVariant,
-          ),
-          textAlign: TextAlign.center,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              '© ${DateTime.now().year} Sara Baby Tracker & Sounds — ',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
+              ),
+            ),
+            InkWell(
+              onTap: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
+              child: Text(
+                'Community',
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Theme.of(context).colorScheme.primary,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: 16),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/blob/main/PRIVACY.md')),
+              onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
               child: Text(
                 'Privacy Policy',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -423,7 +445,7 @@ class FooterSection extends StatelessWidget {
             ),
             const SizedBox(width: 16),
             TextButton(
-              onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/blob/main/TERMS.md')),
+              onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
               child: Text(
                 'Terms of Service',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -443,17 +465,31 @@ class FooterSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Expanded(
-          child: Text(
-            '© ${DateTime.now().year} Sara Baby Tracker & Sounds — Open Source',
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Theme.of(context).colorScheme.onSurfaceVariant,
-            ),
+          child: Row(
+            children: [
+              Text(
+                '© ${DateTime.now().year} Sara Baby Tracker & Sounds — ',
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                ),
+              ),
+              InkWell(
+                onTap: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
+                child: Text(
+                  'Community',
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(context).colorScheme.primary,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
         Row(
           children: [
             TextButton(
-              onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/blob/main/PRIVACY.md')),
+              onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
               child: Text(
                 'Privacy Policy',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -464,7 +500,7 @@ class FooterSection extends StatelessWidget {
             ),
             const SizedBox(width: 16),
             TextButton(
-              onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds/blob/main/TERMS.md')),
+              onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
               child: Text(
                 'Terms of Service',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
