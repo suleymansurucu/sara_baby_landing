@@ -397,13 +397,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get homeNavigation => 'Главная';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'Сообщество FlutterGoo';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'Страница GitHub';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => 'Познакомьтесь с Основателем Сообщества';
 
   @override
   String get linkedin => 'LinkedIn';

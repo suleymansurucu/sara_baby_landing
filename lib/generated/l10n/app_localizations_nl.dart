@@ -397,13 +397,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get homeNavigation => 'Start';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'FlutterGoo Gemeenschap';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'GitHub Pagina';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => 'Ontmoet de Gemeenschapsoprichter';
 
   @override
   String get linkedin => 'LinkedIn';

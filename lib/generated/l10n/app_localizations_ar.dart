@@ -395,13 +395,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get homeNavigation => 'الرئيسية';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'مجتمع FlutterGoo';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'صفحة GitHub';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => 'تعرف على مؤسس المجتمع';
 
   @override
   String get linkedin => 'LinkedIn';

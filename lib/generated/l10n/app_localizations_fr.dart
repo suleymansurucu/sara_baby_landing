@@ -396,13 +396,13 @@ class AppLocalizationsFr extends AppLocalizations {
   String get homeNavigation => 'Accueil';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'Communauté FlutterGoo';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'Page GitHub';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => 'Rencontrer le Fondateur de la Communauté';
 
   @override
   String get linkedin => 'LinkedIn';

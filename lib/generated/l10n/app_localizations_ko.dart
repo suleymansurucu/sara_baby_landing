@@ -387,13 +387,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeNavigation => '홈';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'FlutterGoo 커뮤니티';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'GitHub 페이지';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => '커뮤니티 창립자 만나기';
 
   @override
   String get linkedin => 'LinkedIn';

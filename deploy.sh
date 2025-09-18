@@ -40,7 +40,7 @@ flutter gen-l10n
 
 # Build for web
 echo "🔨 Building for web..."
-flutter build web --release --web-renderer html
+flutter build web --release
 
 # Check if build was successful
 if [ ! -d "build/web" ]; then

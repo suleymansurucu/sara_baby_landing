@@ -396,13 +396,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get homeNavigation => 'Beranda';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'Komunitas FlutterGoo';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'Halaman GitHub';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => 'Temui Pendiri Komunitas';
 
   @override
   String get linkedin => 'LinkedIn';

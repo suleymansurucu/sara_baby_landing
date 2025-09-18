@@ -374,13 +374,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get homeNavigation => '首页';
 
   @override
-  String get communityFluttergoo => 'Community FlutterGoo';
+  String get communityFluttergoo => 'FlutterGoo 社区';
 
   @override
-  String get githubPage => 'GitHub Page';
+  String get githubPage => 'GitHub 页面';
 
   @override
-  String get meetCommunityFounder => 'Meet Community Founder';
+  String get meetCommunityFounder => '认识社区创始人';
 
   @override
   String get linkedin => 'LinkedIn';
