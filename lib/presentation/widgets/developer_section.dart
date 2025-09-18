@@ -75,9 +75,9 @@ class DeveloperSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
 
-                    // Developer name
+                    // Community name
                     Text(
-                      'Meet the Developer',
+                      'Flutter Goo Open Source Community',
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.w600,
@@ -86,9 +86,9 @@ class DeveloperSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
 
-                    // Developer name
+                    // Community name
                     Text(
-                      'Suleyman Surucu',
+                      'Building Modern Solutions for New Parents', textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: Theme.of(context).colorScheme.onSurface,
@@ -96,9 +96,9 @@ class DeveloperSection extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
 
-                    // Developer bio
+                    // Community description
                     Text(
-                      'With over 4 years of professional experience, I specialize in building performance-driven, scalable, and clean-code cross-platform mobile applications using Flutter and Dart. I focus on creating innovative solutions to real-world problems, providing technical leadership, and contributing to the open-source community. My deep knowledge in this field is something I enjoy sharing through my blog posts and open-source projects.',
+                      'We are a passionate open-source community dedicated to creating modern, intuitive, and accessible solutions for new parents. Our mission is to make parenting easier through innovative technology, clean design, and community-driven development. Join us in building tools that help families track, nurture, and celebrate every precious moment of their baby\'s journey.',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                         height: 1.5,
@@ -115,7 +115,7 @@ class DeveloperSection extends StatelessWidget {
                       children: [
                         // GitHub button
                         OutlinedButton.icon(
-                          onPressed: () => launchUrl(Uri.parse('https://github.com/suleymansurucu/flutter_sara_baby_tracker_and_sounds')),
+                          onPressed: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
                           icon: const Icon(Icons.code, size: 20),
                           label: const Text('View GitHub'),
                           style: OutlinedButton.styleFrom(
@@ -131,11 +131,11 @@ class DeveloperSection extends StatelessWidget {
                           ),
                         ),
 
-                        // LinkedIn button
+                        // Community button
                         OutlinedButton.icon(
-                          onPressed: () => launchUrl(Uri.parse('https://www.linkedin.com/in/suleymansurucu/')),
-                          icon: const Icon(Icons.business_center, size: 20),
-                          label: const Text('LinkedIn'),
+                          onPressed: () => launchUrl(Uri.parse('https://github.com/fluttergoo')),
+                          icon: const Icon(Icons.group, size: 20),
+                          label: const Text('Community'),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Theme.of(context).colorScheme.secondary,
                             side: BorderSide(
@@ -151,7 +151,7 @@ class DeveloperSection extends StatelessWidget {
 
                         // Email button
                         OutlinedButton.icon(
-                          onPressed: () => launchUrl(Uri.parse('mailto:suleymansurucu95@gmail.com')),
+                          onPressed: () => launchUrl(Uri.parse('mailto:fluttergoo@gmail.com')),
                           icon: const Icon(Icons.email, size: 20),
                           label: const Text('Email'),
                           style: OutlinedButton.styleFrom(
