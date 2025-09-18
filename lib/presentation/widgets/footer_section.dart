@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:go_router/go_router.dart';
 import 'max_width.dart';
 
 class FooterSection extends StatelessWidget {
@@ -454,7 +455,7 @@ class FooterSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
+              onPressed: () => context.go('/privacy-policy'),
               child: Text(
                 AppLocalizations.of(context)!.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -465,7 +466,7 @@ class FooterSection extends StatelessWidget {
             ),
             const SizedBox(width: 16),
             TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
+              onPressed: () => context.go('/terms-of-service'),
               child: Text(
                 AppLocalizations.of(context)!.termsOfService,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -509,7 +510,7 @@ class FooterSection extends StatelessWidget {
         Row(
           children: [
             TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
+              onPressed: () => context.go('/privacy-policy'),
               child: Text(
                 AppLocalizations.of(context)!.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
@@ -520,7 +521,7 @@ class FooterSection extends StatelessWidget {
             ),
             const SizedBox(width: 16),
             TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
+              onPressed: () => context.go('/terms-of-service'),
               child: Text(
                 AppLocalizations.of(context)!.termsOfService,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(

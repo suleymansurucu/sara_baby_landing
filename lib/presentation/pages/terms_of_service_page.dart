@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:untitled/generated/l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 import '../widgets/max_width.dart';
 
 class TermsOfServicePage extends StatelessWidget {
@@ -78,12 +79,12 @@ class TermsOfServicePage extends StatelessWidget {
                 ),
                 if (!isPhone(context)) ...[
                   TextButton(
-                    onPressed: () => Navigator.pushNamed(context, '/'),
+                    onPressed: () => context.go('/'),
                     child: Text(AppLocalizations.of(context)!.homeNavigation, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
                   const SizedBox(width: 12),
                   FilledButton(
-                    onPressed: () => Navigator.pushNamed(context, '/'),
+                    onPressed: () => context.go('/'),
                     style: FilledButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -173,13 +174,13 @@ class TermsOfServicePage extends StatelessWidget {
                     context,
                     AppLocalizations.of(context)!.homeNavigation,
                     Icons.home_outlined,
-                    () { Navigator.pop(context); Navigator.pushNamed(context, '/'); },
+                    () { Navigator.pop(context); context.go('/'); },
                   ),
                   const SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: FilledButton(
-                      onPressed: () { Navigator.pop(context); Navigator.pushNamed(context, '/'); },
+                      onPressed: () { Navigator.pop(context); context.go('/'); },
                       style: FilledButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(

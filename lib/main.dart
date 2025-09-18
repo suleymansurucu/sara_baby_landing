@@ -10,6 +10,10 @@ import 'services/route_service.dart';
 import 'services/deep_link_service.dart';
 import 'services/language_change_notifier.dart';
 import 'generated/l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
+import 'presentation/pages/landing_page.dart';
+import 'presentation/pages/privacy_policy_page.dart';
+import 'presentation/pages/terms_of_service_page.dart';
 
 
 void main() async {
@@ -31,11 +35,31 @@ class SaraLandingApp extends StatefulWidget {
 class _SaraLandingAppState extends State<SaraLandingApp> {
   Locale _currentLocale = const Locale('en');
   late StreamSubscription<String> _languageChangeSubscription;
+  late final GoRouter _router;
   
   @override
   void initState() {
     super.initState();
     _loadLocale();
+    
+    // Initialize GoRouter
+    _router = GoRouter(
+      initialLocation: AppRoutes.home,
+      routes: [
+        GoRoute(
+          path: AppRoutes.home,
+          builder: (context, state) => const LandingPage(),
+        ),
+        GoRoute(
+          path: AppRoutes.privacyPolicy,
+          builder: (context, state) => const PrivacyPolicyPage(),
+        ),
+        GoRoute(
+          path: AppRoutes.termsOfService,
+          builder: (context, state) => const TermsOfServicePage(),
+        ),
+      ],
+    );
     
     // Listen to language changes
     _languageChangeSubscription = LanguageChangeNotifier().languageChangeStream.listen((languageCode) {
@@ -64,7 +88,7 @@ class _SaraLandingAppState extends State<SaraLandingApp> {
   
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
+        return MaterialApp.router(
           title: 'Sara Baby Tracker & Sounds',
           debugShowCheckedModeBanner: false,
           locale: _currentLocale,
@@ -174,12 +198,7 @@ class _SaraLandingAppState extends State<SaraLandingApp> {
       scrollBehavior: const MaterialScrollBehavior().copyWith(
         dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse, PointerDeviceKind.trackpad},
       ),
-      initialRoute: AppRoutes.home,
-          routes: RouteService.routes,
-          onGenerateRoute: RouteService.generateRoute,
-          onUnknownRoute: (settings) {
-            return RouteService.generateRoute(settings);
-          },
+      routerConfig: _router,
         );
   }
 }

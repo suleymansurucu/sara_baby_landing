@@ -125,11 +125,6 @@ class RouteService {
     if (path.startsWith('/')) {
       path = path.substring(1);
     }
-    
-    // Remove trailing slash if present
-    if (path.endsWith('/')) {
-      path = path.substring(0, path.length - 1);
-    }
 
     // Handle empty path
     if (path.isEmpty) {
