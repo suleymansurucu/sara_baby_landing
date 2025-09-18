@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'max_width.dart';
 import '../../domain/entities/app_info.dart';
+import '../../generated/l10n/app_localizations.dart';
 
 class HeroSection extends StatelessWidget {
   final AppInfo appInfo;
@@ -20,8 +21,8 @@ class HeroSection extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.9),
-            Theme.of(context).colorScheme.secondary.withOpacity(0.8),
+            Theme.of(context).colorScheme.primary.withValues(alpha: 0.9),
+            Theme.of(context).colorScheme.secondary.withValues(alpha: 0.8),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -62,7 +63,7 @@ class HeroSection extends StatelessWidget {
           width: 80,
           height: 2,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.3),
+            color: Colors.white.withValues(alpha: 0.3),
             borderRadius: BorderRadius.circular(1),
           ),
         ),
@@ -72,7 +73,7 @@ class HeroSection extends StatelessWidget {
           child: Text(
             appInfo.tagline,
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: Colors.white.withOpacity(0.95),
+              color: Colors.white.withValues(alpha: 0.95),
               height: 1.5,
               fontSize: 18,
               fontWeight: FontWeight.w400,
@@ -114,7 +115,7 @@ class HeroSection extends StatelessWidget {
                 width: 100,
                 height: 2,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.3),
+                  color: Colors.white.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(1),
                 ),
               ),
@@ -122,7 +123,7 @@ class HeroSection extends StatelessWidget {
               Text(
                 appInfo.tagline,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: Colors.white.withOpacity(0.95),
+                  color: Colors.white.withValues(alpha: 0.95),
                   height: 1.5,
                   fontSize: 20,
                   fontWeight: FontWeight.w400,
@@ -159,7 +160,7 @@ class HeroSection extends StatelessWidget {
         borderRadius: BorderRadius.circular(32),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withValues(alpha: 0.2),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -171,13 +172,13 @@ class HeroSection extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(32),
               border: Border.all(
-                color: Colors.white.withOpacity(0.2),
+                color: Colors.white.withValues(alpha: 0.2),
                 width: 2,
               ),
               gradient: LinearGradient(
                 colors: [
-                  Colors.white.withOpacity(0.1),
-                  Colors.white.withOpacity(0.05),
+                  Colors.white.withValues(alpha: 0.1),
+                  Colors.white.withValues(alpha: 0.05),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -202,7 +203,7 @@ class HeroSection extends StatelessWidget {
               height: 32,
               margin: const EdgeInsets.symmetric(horizontal: 80),
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.8),
+                color: Colors.black.withValues(alpha: 0.8),
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(16),
                   bottomRight: Radius.circular(16),
@@ -220,9 +221,9 @@ class HeroSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          'Get Started Today',
+          AppLocalizations.of(context)!.getStartedToday,
           style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.white.withValues(alpha: 0.9),
             fontWeight: FontWeight.w500,
             fontSize: 18,
             letterSpacing: 0.3,
@@ -246,7 +247,7 @@ class HeroSection extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.15),
+                      color: Colors.black.withValues(alpha: 0.15),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -262,7 +263,7 @@ class HeroSection extends StatelessWidget {
                     ),
                     const SizedBox(width: 12),
                     Text(
-                      'App Store',
+                      AppLocalizations.of(context)!.appStore,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: Colors.black87,
@@ -282,7 +283,7 @@ class HeroSection extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.15),
+                      color: Colors.black.withValues(alpha: 0.15),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -298,7 +299,7 @@ class HeroSection extends StatelessWidget {
                     ),
                     const SizedBox(width: 12),
                     Text(
-                      'Google Play',
+                      AppLocalizations.of(context)!.googlePlay,
                       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: Colors.black87,
@@ -340,9 +341,9 @@ class HeroSection extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'Perfect Rating',
+                AppLocalizations.of(context)!.perfectRating,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: Colors.white.withOpacity(0.9),
+                  color: Colors.white.withValues(alpha: 0.9),
                   fontWeight: FontWeight.w500,
                   fontSize: 12,
                 ),
@@ -359,13 +360,13 @@ class HeroSection extends StatelessWidget {
                 context,
                 icon: Icons.favorite,
                 iconColor: Colors.pinkAccent,
-                text: '1K+ Parents',
+                text: AppLocalizations.of(context)!.parentsCount,
               ),
               _buildTrustItem(
                 context,
                 icon: Icons.block,
                 iconColor: Colors.greenAccent,
-                text: 'No Ads',
+                text: AppLocalizations.of(context)!.noAds,
               ),
             ],
           ),
@@ -391,9 +392,9 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(width: 8),
         Text(
-          'Perfect Rating',
+          AppLocalizations.of(context)!.perfectRating,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.white.withValues(alpha: 0.9),
             fontWeight: FontWeight.w500,
             fontSize: 12,
           ),
@@ -402,27 +403,27 @@ class HeroSection extends StatelessWidget {
         Container(
           width: 1,
           height: 12,
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha: 0.2),
         ),
         const SizedBox(width: 20),
         _buildTrustItem(
           context,
           icon: Icons.favorite,
           iconColor: Colors.pinkAccent,
-          text: '1000+ Parents',
+          text: AppLocalizations.of(context)!.parentsCount,
         ),
         const SizedBox(width: 20),
         Container(
           width: 1,
           height: 12,
-          color: Colors.white.withOpacity(0.2),
+          color: Colors.white.withValues(alpha: 0.2),
         ),
         const SizedBox(width: 20),
         _buildTrustItem(
           context,
           icon: Icons.block,
           iconColor: Colors.greenAccent,
-          text: 'No Ads',
+          text: AppLocalizations.of(context)!.noAds,
         ),
       ],
     );
@@ -439,7 +440,7 @@ class HeroSection extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(4),
           decoration: BoxDecoration(
-            color: iconColor.withOpacity(0.2),
+            color: iconColor.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(6),
           ),
           child: Icon(
@@ -452,7 +453,7 @@ class HeroSection extends StatelessWidget {
         Text(
           text,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.white.withValues(alpha: 0.9),
             fontWeight: FontWeight.w500,
             fontSize: 12,
           ),

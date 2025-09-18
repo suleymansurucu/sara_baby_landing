@@ -29,16 +29,16 @@ class LandingController extends ChangeNotifier {
   bool get isLoading => _isLoading;
   String? get error => _error;
 
-  Future<void> loadData() async {
+  Future<void> loadData(BuildContext context) async {
     _isLoading = true;
     _error = null;
     notifyListeners();
 
     try {
       final results = await Future.wait([
-        _getAppInfo(),
-        _getFeatures(),
-        _getFAQItems(),
+        _getAppInfo(context),
+        _getFeatures(context),
+        _getFAQItems(context),
       ]);
 
       _appInfo = results[0] as AppInfo;

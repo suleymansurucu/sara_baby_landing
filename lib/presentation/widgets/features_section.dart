@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'max_width.dart';
 import '../../domain/entities/feature.dart';
 
@@ -28,14 +29,14 @@ class FeaturesSection extends StatelessWidget {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                          Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                          Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                          Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      '✨ Features',
+                      AppLocalizations.of(context)!.featuresTitle,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: Theme.of(context).colorScheme.primary,
@@ -44,7 +45,7 @@ class FeaturesSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Complete Baby Care Solution',
+                    AppLocalizations.of(context)!.featuresSubtitle,
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       fontWeight: FontWeight.w800,
                       color: Theme.of(context).colorScheme.onSurface,
@@ -52,7 +53,7 @@ class FeaturesSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Everything you need to track your baby\'s development and create a nurturing environment.',
+                    AppLocalizations.of(context)!.featuresDescription,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
                       height: 1.4,
@@ -208,12 +209,12 @@ class _HoverableCardState extends State<HoverableCard> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: widget.gradient.colors.first.withOpacity(0.2),
+                      color: widget.gradient.colors.first.withValues(alpha: 0.2),
                       blurRadius: 16,
                       offset: const Offset(0, 8),
                     ),
                     BoxShadow(
-                      color: widget.gradient.colors.last.withOpacity(0.1),
+                      color: widget.gradient.colors.last.withValues(alpha: 0.1),
                       blurRadius: 24,
                       offset: const Offset(0, 16),
                     ),
@@ -223,7 +224,7 @@ class _HoverableCardState extends State<HoverableCard> {
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.shadow.withOpacity(0.08),
+                      color: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.08),
                       blurRadius: 8,
                       offset: const Offset(0, 4),
                     ),

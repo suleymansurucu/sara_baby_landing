@@ -43,3 +43,22 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Sensitive files and secrets (never commit these!)
+.env
+*.key
+*.pem
+*.jks
+google-services.json
+GoogleService-Info.plist
+
+# Flutter/IDE/Tooling metadata
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.packages
+.firebase/
+.firebase-*
+.idea/
+.vscode/
+Thumbs.db

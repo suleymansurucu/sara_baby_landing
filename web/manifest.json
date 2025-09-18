@@ -1,23 +1,41 @@
 {
-    "name": "untitled",
-    "short_name": "untitled",
-    "start_url": ".",
+    "name": "Sara Baby Tracker & Sounds - Complete Baby Care Companion",
+    "short_name": "Sara Baby",
+    "start_url": "/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#6366f1",
+    "theme_color": "#6366f1",
+    "description": "Track every precious moment with Sara Baby. Complete baby care companion for sleep tracking, feeding schedules, growth monitoring, and soothing sounds. 100% free, forever.",
     "orientation": "portrait-primary",
-    "prefer_related_applications": false,
+    "prefer_related_applications": true,
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://play.google.com/store/apps/details?id=com.suleymansurucu.sarababy",
+            "id": "com.suleymansurucu.sarababy"
+        },
+        {
+            "platform": "itunes",
+            "url": "https://apps.apple.com/us/app/sara-baby-tracker-sounds/id6746516938",
+            "id": "6746516938"
+        }
+    ],
+    "categories": ["health", "lifestyle", "parenting", "medical"],
+    "lang": "en",
+    "dir": "ltr",
+    "scope": "/",
     "icons": [
         {
             "src": "icons/Icon-192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "icons/Icon-512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
             "src": "icons/Icon-maskable-192.png",
@@ -30,6 +48,15 @@
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Sara Baby Tracker & Sounds App Screenshot"
         }
     ]
 }

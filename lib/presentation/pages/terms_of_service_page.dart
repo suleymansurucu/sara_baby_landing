@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:untitled/generated/l10n/app_localizations.dart';
 import '../widgets/max_width.dart';
 
-class PrivacyPolicyPage extends StatelessWidget {
-  const PrivacyPolicyPage({super.key});
+class TermsOfServicePage extends StatelessWidget {
+  const TermsOfServicePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -255,7 +255,7 @@ class PrivacyPolicyPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 24),
                       Text(
-                        AppLocalizations.of(context)!.privacyPolicyTitle,
+                        AppLocalizations.of(context)!.termsOfServiceTitle,
                         style: GoogleFonts.poppins(
                           fontSize: 48,
                           fontWeight: FontWeight.w700,
@@ -289,19 +289,23 @@ class PrivacyPolicyPage extends StatelessWidget {
                   children: [
                     _buildIntroSection(context),
                     const SizedBox(height: 40),
-                    _buildSection(context, '1. Information We Collect', _getInformationWeCollect()),
+                    _buildSection(context, '1. Acceptance of Terms', _getAcceptanceOfTerms()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '2. How We Use Information', _getHowWeUseInformation()),
+                    _buildSection(context, '2. Description of Service', _getDescriptionOfService()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '3. Data Storage and Security', _getDataStorageAndSecurity()),
+                    _buildSection(context, '3. User Accounts and Data', _getUserAccountsAndData()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '4. Third-Party Services', _getThirdPartyServices()),
+                    _buildSection(context, '4. Acceptable Use', _getAcceptableUse()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '5. Children\'s Privacy', _getChildrensPrivacy()),
+                    _buildSection(context, '5. Privacy and Data Protection', _getPrivacyAndDataProtection()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '6. Your Rights', _getYourRights()),
+                    _buildSection(context, '6. Intellectual Property', _getIntellectualProperty()),
                     const SizedBox(height: 40),
-                    _buildSection(context, '7. Changes to This Policy', _getChangesToPolicy()),
+                    _buildSection(context, '7. Disclaimers and Limitations', _getDisclaimersAndLimitations()),
+                    const SizedBox(height: 40),
+                    _buildSection(context, '8. Termination', _getTermination()),
+                    const SizedBox(height: 40),
+                    _buildSection(context, '9. Changes to Terms', _getChangesToTerms()),
                     const SizedBox(height: 40),
                     _buildContactSection(context),
                   ],
@@ -419,7 +423,7 @@ class PrivacyPolicyPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            AppLocalizations.of(context)!.privacyWelcome,
+            AppLocalizations.of(context)!.termsWelcome,
             style: GoogleFonts.inter(
               fontSize: 16,
               height: 1.6,
@@ -471,7 +475,7 @@ class PrivacyPolicyPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            AppLocalizations.of(context)!.contactUs,
+            AppLocalizations.of(context)!.contactInformation,
             style: GoogleFonts.poppins(
               fontSize: 24,
               fontWeight: FontWeight.w600,
@@ -481,7 +485,7 @@ class PrivacyPolicyPage extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            AppLocalizations.of(context)!.privacyContactDescription,
+            AppLocalizations.of(context)!.contactDescription,
             style: GoogleFonts.inter(
               fontSize: 16,
               height: 1.6,
@@ -498,7 +502,7 @@ class PrivacyPolicyPage extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                AppLocalizations.of(context)!.privacyContactEmail,
+                AppLocalizations.of(context)!.contactEmail,
                 style: GoogleFonts.inter(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -512,69 +516,97 @@ class PrivacyPolicyPage extends StatelessWidget {
     );
   }
 
-  String _getInformationWeCollect() {
-    return '''The App is designed for parents and caregivers to track baby activities. Depending on your use, we may collect:
+  String _getAcceptanceOfTerms() {
+    return '''By accessing or using Sara Baby Tracker & Sounds, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this App.
 
-• Baby Profile Data: Name, date of birth, gender, and optional photo (stored locally on your device).
-
-• Activity Records: Feeding times, sleep tracking, diaper changes, milestones, and other activity logs (stored securely on your device or optionally synced with your chosen account if enabled).
-
-• Authentication Data (if enabled): Email and password when creating an account. This is managed securely through Firebase Authentication.
-
-• Crash and Usage Analytics: Anonymous usage data may be collected via Firebase to help us improve performance and stability.''';
+These Terms apply to all users of the App, including without limitation users who are browsers, parents, caregivers, or contributors of content.''';
   }
 
-  String _getHowWeUseInformation() {
-    return '''We use your information solely to:
+  String _getDescriptionOfService() {
+    return '''Sara Baby Tracker & Sounds is a mobile application designed to help parents and caregivers track their baby's activities, growth, and development. The App provides features including:
 
-• Provide baby activity tracking and related app features.
+• Activity tracking (feeding, sleeping, diaper changes, etc.)
+• Growth monitoring and charts
+• Sound library for soothing babies
+• Family sharing capabilities
+• Data export functionality
+• Sleep pattern analysis
 
-• Improve app stability, performance, and user experience.
-
-• Store your data securely, either locally on your device or in the cloud (if you sign in).
-
-We do not sell, rent, or trade your personal information to third parties.''';
+The App is developed and maintained by FlutterGoo, an open-source community project.''';
   }
 
-  String _getDataStorageAndSecurity() {
-    return '''• Local Storage: By default, baby photos and activities are stored only on your device.
+  String _getUserAccountsAndData() {
+    return '''• Account Creation: You may create an account to sync your data across devices. You are responsible for maintaining the confidentiality of your account credentials.
 
-• Cloud Storage (Optional): If you sign in, your data may be synced securely to Firebase Cloud Firestore.
+• Data Ownership: You retain ownership of all data you input into the App. We do not claim ownership of your personal information or baby tracking data.
 
-• Security Measures: We use industry-standard practices such as encryption and secure authentication to protect your information.''';
+• Data Storage: Your data may be stored locally on your device or in secure cloud storage (Firebase) if you choose to create an account.
+
+• Data Accuracy: You are responsible for the accuracy of information you provide. We are not liable for any consequences resulting from inaccurate data entry.''';
   }
 
-  String _getThirdPartyServices() {
-    return '''The App may use the following trusted services:
+  String _getAcceptableUse() {
+    return '''You agree to use the App only for lawful purposes and in accordance with these Terms. You agree not to:
 
-• Firebase Authentication & Firestore (for secure login and cloud sync).
+• Use the App for any illegal or unauthorized purpose
+• Attempt to gain unauthorized access to any part of the App
+• Interfere with or disrupt the App's functionality
+• Upload or transmit any harmful code, viruses, or malicious software
+• Use the App to harass, abuse, or harm others
+• Violate any applicable laws or regulations
 
-• Firebase Analytics / Crashlytics (for anonymous performance and error reporting).
-
-These services have their own privacy policies, which we encourage you to review:
-
-Firebase Privacy Policy''';
+The App is intended for use by parents and caregivers only. It is not designed for use by children under 13 years of age.''';
   }
 
-  String _getChildrensPrivacy() {
-    return '''The App is intended for parents and caregivers, not children. We do not knowingly collect personal information from children under 13. If we discover that we have inadvertently collected such data, we will delete it immediately.''';
+  String _getPrivacyAndDataProtection() {
+    return '''Your privacy is important to us. Our collection and use of personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference.
+
+Key privacy principles:
+• We collect minimal data necessary to provide the service
+• Your baby tracking data is stored securely
+• We do not sell or share your personal information with third parties
+• You can delete your data at any time by uninstalling the App
+• We use industry-standard security measures to protect your information
+
+Please review our Privacy Policy for detailed information about our data practices.''';
   }
 
-  String _getYourRights() {
-    return '''Depending on your location, you may have the right to:
+  String _getIntellectualProperty() {
+    return '''• App Ownership: The App and its original content, features, and functionality are owned by FlutterGoo and are protected by international copyright, trademark, and other intellectual property laws.
 
-• Access or export your data.
+• Open Source: This App is released under an open-source license. The source code is available on GitHub at https://github.com/fluttergoo/open_baby_sara
 
-• Request correction or deletion of your information.
+• User Content: You retain ownership of any content you create or upload to the App. By using the App, you grant us a limited license to store and process your data to provide the service.
 
-• Withdraw consent and stop using the App at any time.
-
-You can delete all app data directly by uninstalling the App.''';
+• Third-Party Content: The App may include third-party content or services. Such content is subject to the respective third parties' terms and conditions.''';
   }
 
-  String _getChangesToPolicy() {
-    return '''We may update this Privacy Policy from time to time. Any changes will be posted at:
-https://sarababy.app/privacy-policy/''';
+  String _getDisclaimersAndLimitations() {
+    return '''• Medical Disclaimer: This App is for informational and tracking purposes only. It is not intended to replace professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals regarding your baby's health and development.
+
+• Service Availability: We strive to maintain the App's availability but cannot guarantee uninterrupted service. The App may be temporarily unavailable due to maintenance, updates, or technical issues.
+
+• Limitation of Liability: To the maximum extent permitted by law, FlutterGoo shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the App.
+
+• No Warranties: The App is provided "as is" without warranties of any kind, either express or implied.''';
+  }
+
+  String _getTermination() {
+    return '''• Termination by You: You may stop using the App at any time by uninstalling it from your device. You may also delete your account and associated data through the App settings.
+
+• Termination by Us: We reserve the right to terminate or suspend your access to the App at any time, with or without notice, for any reason, including violation of these Terms.
+
+• Effect of Termination: Upon termination, your right to use the App will cease immediately. We may delete your account and associated data, though some data may be retained as required by law or for legitimate business purposes.''';
+  }
+
+  String _getChangesToTerms() {
+    return '''We reserve the right to modify these Terms at any time. We will notify users of any material changes by:
+
+• Posting the updated Terms on our website
+• Updating the "Last Updated" date at the top of these Terms
+• Sending a notification through the App (if applicable)
+
+Your continued use of the App after any changes constitutes acceptance of the new Terms. If you do not agree to the modified Terms, you should discontinue use of the App.''';
   }
 }
 

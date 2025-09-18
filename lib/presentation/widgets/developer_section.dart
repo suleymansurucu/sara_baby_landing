@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'max_width.dart';
 
@@ -9,7 +10,7 @@ class DeveloperSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 80),
-      color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.5),
+      color: Theme.of(context).colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
       child: MaxWidth(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -22,7 +23,7 @@ class DeveloperSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(24),
               ),
               child: Text(
-                '✨ Sara is fully open-source',
+                AppLocalizations.of(context)!.developerTitle,
                 style: Theme.of(context).textTheme.titleMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onPrimaryContainer,
                   fontWeight: FontWeight.w600,
@@ -31,7 +32,7 @@ class DeveloperSection extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             Text(
-              'Explore the code, open issues, and contribute to make Sara even better.',
+              AppLocalizations.of(context)!.developerDescription,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
                 height: 1.5,
@@ -43,7 +44,7 @@ class DeveloperSection extends StatelessWidget {
             // Developer card
             Card(
               elevation: 4,
-              shadowColor: Theme.of(context).colorScheme.shadow.withOpacity(0.1),
+              shadowColor: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.1),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
@@ -77,7 +78,7 @@ class DeveloperSection extends StatelessWidget {
 
                     // Community name
                     Text(
-                      'Flutter Goo Open Source Community',
+                      AppLocalizations.of(context)!.developerCommunity,
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.w600,
@@ -88,7 +89,7 @@ class DeveloperSection extends StatelessWidget {
 
                     // Community name
                     Text(
-                      'Building Modern Solutions for New Parents', textAlign: TextAlign.center,
+                      AppLocalizations.of(context)!.developerMission, textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                         fontWeight: FontWeight.w700,
                         color: Theme.of(context).colorScheme.onSurface,
@@ -98,7 +99,7 @@ class DeveloperSection extends StatelessWidget {
 
                     // Community description
                     Text(
-                      'We are a passionate open-source community dedicated to creating modern, intuitive, and accessible solutions for new parents. Our mission is to make parenting easier through innovative technology, clean design, and community-driven development. Join us in building tools that help families track, nurture, and celebrate every precious moment of their baby\'s journey.',
+                      AppLocalizations.of(context)!.developerAbout,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                         height: 1.5,
@@ -117,7 +118,7 @@ class DeveloperSection extends StatelessWidget {
                         OutlinedButton.icon(
                           onPressed: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
                           icon: const Icon(Icons.code, size: 20),
-                          label: const Text('View GitHub'),
+                          label: Text(AppLocalizations.of(context)!.viewGitHub),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Theme.of(context).colorScheme.primary,
                             side: BorderSide(
@@ -135,7 +136,7 @@ class DeveloperSection extends StatelessWidget {
                         OutlinedButton.icon(
                           onPressed: () => launchUrl(Uri.parse('https://github.com/fluttergoo')),
                           icon: const Icon(Icons.group, size: 20),
-                          label: const Text('Community'),
+                          label: Text(AppLocalizations.of(context)!.community),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Theme.of(context).colorScheme.secondary,
                             side: BorderSide(
@@ -153,7 +154,7 @@ class DeveloperSection extends StatelessWidget {
                         OutlinedButton.icon(
                           onPressed: () => launchUrl(Uri.parse('mailto:fluttergoo@gmail.com')),
                           icon: const Icon(Icons.email, size: 20),
-                          label: const Text('Email'),
+                          label: Text(AppLocalizations.of(context)!.email),
                           style: OutlinedButton.styleFrom(
                             foregroundColor: Theme.of(context).colorScheme.tertiary,
                             side: BorderSide(

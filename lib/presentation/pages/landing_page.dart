@@ -8,6 +8,7 @@ import '../widgets/developer_section.dart';
 import '../widgets/faq_section.dart';
 import '../widgets/cta_section.dart';
 import '../widgets/footer_section.dart';
+import '../widgets/language_selector.dart';
 import '../controllers/landing_controller.dart';
 import '../../domain/usecases/get_app_info.dart';
 import '../../domain/usecases/get_features.dart';
@@ -15,6 +16,7 @@ import '../../domain/usecases/get_faq_items.dart';
 import '../../data/repositories/app_info_repository.dart';
 import '../../data/repositories/feature_repository.dart';
 import '../../data/repositories/faq_repository.dart';
+import '../../generated/l10n/app_localizations.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -46,8 +48,15 @@ class _LandingPageState extends State<LandingPage> {
       GetFeatures(FeatureRepositoryImpl()),
       GetFAQItems(FAQRepositoryImpl()),
     );
-    
-    _controller.loadData();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Load data after dependencies are available (including localization)
+    if (_controller.isLoading) {
+      _controller.loadData(context);
+    }
   }
 
   @override
@@ -85,6 +94,35 @@ class _LandingPageState extends State<LandingPage> {
     );
   }
 
+  void _showLanguageDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text(
+            AppLocalizations.of(context)!.selectLanguage,
+            style: GoogleFonts.poppins(
+              fontWeight: FontWeight.w600,
+              fontSize: 18,
+            ),
+          ),
+          content: const LanguageSelector(),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: Text(
+                AppLocalizations.of(context)!.cancel,
+                style: GoogleFonts.poppins(
+                  color: Theme.of(context).colorScheme.onSurface,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   Widget _buildAnimatedSection(GlobalKey key, Widget section, int index) {
     return TweenAnimationBuilder<double>(
       key: key,
@@ -111,7 +149,7 @@ class _LandingPageState extends State<LandingPage> {
         leading: Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Icon(
@@ -132,7 +170,7 @@ class _LandingPageState extends State<LandingPage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.05),
+        hoverColor: Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
       ),
     );
   }
@@ -145,7 +183,7 @@ class _LandingPageState extends State<LandingPage> {
         child: Container(
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.surface,
-            border: Border(bottom: BorderSide(color: Colors.black.withOpacity(.06))),
+            border: Border(bottom: BorderSide(color: Colors.black.withValues(alpha: .06))),
           ),
           child: MaxWidth(
             child: Row(
@@ -162,7 +200,7 @@ class _LandingPageState extends State<LandingPage> {
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.1),
+                                color: Colors.black.withValues(alpha: 0.1),
                                 blurRadius: 10,
                                 offset: const Offset(0, 3),
                               ),
@@ -210,24 +248,26 @@ class _LandingPageState extends State<LandingPage> {
                 if (!isPhone(context)) ...[
                   TextButton(
                     onPressed: () => _scrollTo(_heroKey), 
-                    child: Text('Home', style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
+                    child: Text(AppLocalizations.of(context)!.home, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
                   TextButton(
                     onPressed: () => _scrollTo(_featuresKey), 
-                    child: Text('Features', style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
+                    child: Text(AppLocalizations.of(context)!.features, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
                   TextButton(
                     onPressed: () => _scrollTo(_screensKey), 
-                    child: Text('Screens', style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
+                    child: Text(AppLocalizations.of(context)!.screens, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
                   TextButton(
                     onPressed: () => _scrollTo(_developerKey), 
-                    child: Text('Developer', style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
+                    child: Text(AppLocalizations.of(context)!.developer, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
                   TextButton(
                     onPressed: () => _scrollTo(_faqKey), 
-                    child: Text('FAQ', style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
+                    child: Text(AppLocalizations.of(context)!.faq, style: GoogleFonts.poppins(fontWeight: FontWeight.w500)),
                   ),
+                  const SizedBox(width: 8),
+                  const LanguageSelector(isCompact: true),
                   const SizedBox(width: 12),
                   FilledButton(
                     onPressed: () => _scrollTo(_ctaKey),
@@ -235,7 +275,7 @@ class _LandingPageState extends State<LandingPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                     ),
-                    child: Text('Get the App', style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
+                    child: Text(AppLocalizations.of(context)!.getTheApp, style: GoogleFonts.poppins(fontWeight: FontWeight.w600)),
                   ),
                 ],
                 if (isPhone(context))
@@ -263,8 +303,8 @@ class _LandingPageState extends State<LandingPage> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                    Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
                   ],
                 ),
               ),
@@ -281,7 +321,7 @@ class _LandingPageState extends State<LandingPage> {
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.1),
+                              color: Colors.black.withValues(alpha: 0.1),
                               blurRadius: 10,
                               offset: const Offset(0, 3),
                             ),
@@ -318,33 +358,39 @@ class _LandingPageState extends State<LandingPage> {
                 children: [
                   _buildMenuItem(
                     context,
-                    'Home',
+                    AppLocalizations.of(context)!.home,
                     Icons.home_outlined,
                     () { Navigator.pop(context); _scrollTo(_heroKey); },
                   ),
                   _buildMenuItem(
                     context,
-                    'Features',
+                    AppLocalizations.of(context)!.features,
                     Icons.star_outline,
                     () { Navigator.pop(context); _scrollTo(_featuresKey); },
                   ),
                   _buildMenuItem(
                     context,
-                    'Screens',
+                    AppLocalizations.of(context)!.screens,
                     Icons.phone_android_outlined,
                     () { Navigator.pop(context); _scrollTo(_screensKey); },
                   ),
                   _buildMenuItem(
                     context,
-                    'Developer',
+                    AppLocalizations.of(context)!.developer,
                     Icons.person_outline,
                     () { Navigator.pop(context); _scrollTo(_developerKey); },
                   ),
                   _buildMenuItem(
                     context,
-                    'FAQ',
+                    AppLocalizations.of(context)!.faq,
                     Icons.help_outline,
                     () { Navigator.pop(context); _scrollTo(_faqKey); },
+                  ),
+                  _buildMenuItem(
+                    context,
+                    AppLocalizations.of(context)!.language,
+                    Icons.language,
+                    () { Navigator.pop(context); _showLanguageDialog(); },
                   ),
                   const SizedBox(height: 20),
                   Padding(
@@ -363,7 +409,7 @@ class _LandingPageState extends State<LandingPage> {
                           const Icon(Icons.download, size: 20),
                           const SizedBox(width: 8),
                           Text(
-                            'Get the App',
+                            AppLocalizations.of(context)!.getTheApp,
                             style: GoogleFonts.poppins(
                               fontWeight: FontWeight.w600,
                               fontSize: 16,
@@ -397,14 +443,14 @@ class _LandingPageState extends State<LandingPage> {
                   const Icon(Icons.error_outline, size: 64, color: Colors.red),
                   const SizedBox(height: 16),
                   Text(
-                    'Error loading content: ${_controller.error}',
+                    AppLocalizations.of(context)!.errorLoadingContent(_controller.error!),
                     style: Theme.of(context).textTheme.bodyLarge,
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
                   ElevatedButton(
-                    onPressed: () => _controller.loadData(),
-                    child: const Text('Retry'),
+                    onPressed: () => _controller.loadData(context),
+                    child: Text(AppLocalizations.of(context)!.retry),
                   ),
                 ],
               ),

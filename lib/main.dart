@@ -1,25 +1,80 @@
+import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'constants/app_colors.dart';
 import 'constants/app_routes.dart';
-import 'presentation/pages/landing_page.dart';
-import 'presentation/pages/privacy_policy_page.dart';
-import 'presentation/pages/terms_of_service_page.dart';
+import 'services/language_service.dart';
+import 'services/route_service.dart';
+import 'services/deep_link_service.dart';
+import 'services/language_change_notifier.dart';
+import 'generated/l10n/app_localizations.dart';
 
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize deep link service for web
+  DeepLinkService.initialize();
+  
   runApp(const SaraLandingApp());
 }
 
-class SaraLandingApp extends StatelessWidget {
+class SaraLandingApp extends StatefulWidget {
   const SaraLandingApp({super.key});
+  
+  @override
+  State<SaraLandingApp> createState() => _SaraLandingAppState();
+}
+
+class _SaraLandingAppState extends State<SaraLandingApp> {
+  Locale _currentLocale = const Locale('en');
+  late StreamSubscription<String> _languageChangeSubscription;
+  
+  @override
+  void initState() {
+    super.initState();
+    _loadLocale();
+    
+    // Listen to language changes
+    _languageChangeSubscription = LanguageChangeNotifier().languageChangeStream.listen((languageCode) {
+      _loadLocale();
+    });
+  }
+  
+  @override
+  void dispose() {
+    _languageChangeSubscription.cancel();
+    super.dispose();
+  }
+  
+  Future<void> _loadLocale() async {
+    final locale = await LanguageService.getCurrentLocale();
+    if (mounted) {
+      setState(() {
+        _currentLocale = locale;
+      });
+    }
+  }
+  
+  void _onLanguageChanged() {
+    _loadLocale();
+  }
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Sara Baby Tracker & Sounds',
-      debugShowCheckedModeBanner: false,
+        return MaterialApp(
+          title: 'Sara Baby Tracker & Sounds',
+          debugShowCheckedModeBanner: false,
+          locale: _currentLocale,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: LanguageService.supportedLocales,
       theme: ThemeData(
         colorScheme: AppColors.colorScheme,
         textTheme: GoogleFonts.interTextTheme().copyWith(
@@ -120,11 +175,11 @@ class SaraLandingApp extends StatelessWidget {
         dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse, PointerDeviceKind.trackpad},
       ),
       initialRoute: AppRoutes.home,
-      routes: {
-        AppRoutes.home: (context) => const LandingPage(),
-        AppRoutes.privacyPolicy: (context) => const PrivacyPolicyPage(),
-        AppRoutes.termsOfService: (context) => const TermsOfServicePage(),
-      },
-    );
+          routes: RouteService.routes,
+          onGenerateRoute: RouteService.generateRoute,
+          onUnknownRoute: (settings) {
+            return RouteService.generateRoute(settings);
+          },
+        );
   }
 }

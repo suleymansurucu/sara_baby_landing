@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'max_width.dart';
 import '../../domain/entities/faq_item.dart';
 
@@ -28,14 +29,14 @@ class FAQSection extends StatelessWidget {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                          Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                          Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                          Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(
-                      '❓ FAQ',
+                      AppLocalizations.of(context)!.faqTitle,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontWeight: FontWeight.w600,
                         color: Theme.of(context).colorScheme.primary,
@@ -44,7 +45,7 @@ class FAQSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Frequently Asked Questions',
+                    AppLocalizations.of(context)!.faqSubtitle,
                     style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       fontWeight: FontWeight.w800,
                       color: Theme.of(context).colorScheme.onSurface,
@@ -52,7 +53,7 @@ class FAQSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Find answers to common questions about Sara Baby Tracker.',
+                    AppLocalizations.of(context)!.faqDescription,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
                       height: 1.4,
@@ -76,7 +77,7 @@ class FAQSection extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
           side: BorderSide(
-            color: Theme.of(context).colorScheme.outline.withOpacity(0.2),
+            color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.2),
           ),
         ),
         child: Theme(

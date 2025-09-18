@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'max_width.dart';
 
@@ -10,7 +11,7 @@ class FooterSection extends StatelessWidget {
     final isMobile = MediaQuery.of(context).size.width < 768;
 
     return Container(
-      color: Theme.of(context).colorScheme.surfaceVariant,
+      color: Theme.of(context).colorScheme.surfaceContainerHighest,
       padding: const EdgeInsets.symmetric(vertical: 64, horizontal: 16),
       child: MaxWidth(
         child: Column(
@@ -25,7 +26,7 @@ class FooterSection extends StatelessWidget {
 
             // Divider
             Divider(
-              color: Theme.of(context).colorScheme.outline.withOpacity(0.3),
+              color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.3),
               thickness: 1,
             ),
 
@@ -54,7 +55,7 @@ class FooterSection extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'Sara Baby Tracker & Sounds',
+            AppLocalizations.of(context)!.footerTitle,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.bold,
               color: Theme.of(context).colorScheme.onSurface,
@@ -63,7 +64,7 @@ class FooterSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'The ultimate companion for new parents. Track your baby\'s activities, growth, and sleep patterns with ease.',
+            AppLocalizations.of(context)!.footerDescription,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
               color: Theme.of(context).colorScheme.onSurfaceVariant,
             ),
@@ -119,7 +120,7 @@ class FooterSection extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Sara Baby Tracker & Sounds',
+                            AppLocalizations.of(context)!.footerTitle,
                             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Theme.of(context).colorScheme.onSurface,
@@ -127,7 +128,7 @@ class FooterSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            'The ultimate companion for new parents',
+                            AppLocalizations.of(context)!.footerSubtitle,
                             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                               color: Theme.of(context).colorScheme.onSurfaceVariant,
                             ),
@@ -139,7 +140,7 @@ class FooterSection extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Track your baby\'s activities, growth, and sleep patterns with ease. Built with love for parents who want the best for their little ones.',
+                  AppLocalizations.of(context)!.footerAbout,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
@@ -189,7 +190,7 @@ class FooterSection extends StatelessWidget {
       crossAxisAlignment: isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Text(
-          'Download Now',
+          AppLocalizations.of(context)!.downloadNow,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: Theme.of(context).colorScheme.onSurface,
@@ -228,7 +229,7 @@ class FooterSection extends StatelessWidget {
       crossAxisAlignment: isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Text(
-          'Key Features',
+          AppLocalizations.of(context)!.keyFeatures,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: Theme.of(context).colorScheme.onSurface,
@@ -277,7 +278,7 @@ class FooterSection extends StatelessWidget {
       crossAxisAlignment: isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Text(
-          'Support & Resources',
+          AppLocalizations.of(context)!.supportResources,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: Theme.of(context).colorScheme.onSurface,
@@ -330,7 +331,7 @@ class FooterSection extends StatelessWidget {
       crossAxisAlignment: isMobile ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Text(
-          'Connect With Us',
+          AppLocalizations.of(context)!.connectWithUs,
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
             fontWeight: FontWeight.w700,
             color: Theme.of(context).colorScheme.onSurface,
@@ -344,17 +345,36 @@ class FooterSection extends StatelessWidget {
 
   List<Widget> _buildSocialButtons(BuildContext context, {required bool isMobile}) {
     return [
+      // Community section
       _buildLinkButton(
         context,
-        'Community Founder',
-        Icons.person,
+        AppLocalizations.of(context)!.communityFluttergoo,
+        Icons.group,
         'https://github.com/fluttergoo',
         isMobile: isMobile,
       ),
       const SizedBox(height: 8),
       _buildLinkButton(
         context,
-        'LinkedIn',
+        AppLocalizations.of(context)!.githubPage,
+        Icons.code,
+        'https://github.com/fluttergoo/open_baby_sara',
+        isMobile: isMobile,
+      ),
+      const SizedBox(height: 16),
+      
+      // Founder section
+      Text(
+        AppLocalizations.of(context)!.meetCommunityFounder,
+        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+          fontWeight: FontWeight.w600,
+          color: Theme.of(context).colorScheme.onSurface,
+        ),
+      ),
+      const SizedBox(height: 8),
+      _buildLinkButton(
+        context,
+        AppLocalizations.of(context)!.linkedin,
         Icons.work,
         'https://www.linkedin.com/in/suleymansurucu/',
         isMobile: isMobile,
@@ -362,7 +382,7 @@ class FooterSection extends StatelessWidget {
       const SizedBox(height: 8),
       _buildLinkButton(
         context,
-        'Email',
+        AppLocalizations.of(context)!.email,
         Icons.email,
         'mailto:suleymansurucu95@gmail.com',
         isMobile: isMobile,
@@ -412,7 +432,7 @@ class FooterSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '© ${DateTime.now().year} Sara Baby Tracker & Sounds — ',
+              AppLocalizations.of(context)!.copyright(DateTime.now().year),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
               ),
@@ -420,7 +440,7 @@ class FooterSection extends StatelessWidget {
             InkWell(
               onTap: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
               child: Text(
-                'Community',
+                AppLocalizations.of(context)!.community,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.primary,
                   decoration: TextDecoration.underline,
@@ -436,7 +456,7 @@ class FooterSection extends StatelessWidget {
             TextButton(
               onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
               child: Text(
-                'Privacy Policy',
+                AppLocalizations.of(context)!.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                   decoration: TextDecoration.underline,
@@ -447,7 +467,7 @@ class FooterSection extends StatelessWidget {
             TextButton(
               onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
               child: Text(
-                'Terms of Service',
+                AppLocalizations.of(context)!.termsOfService,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                   decoration: TextDecoration.underline,
@@ -468,7 +488,7 @@ class FooterSection extends StatelessWidget {
           child: Row(
             children: [
               Text(
-                '© ${DateTime.now().year} Sara Baby Tracker & Sounds — ',
+                AppLocalizations.of(context)!.copyright(DateTime.now().year),
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
@@ -476,7 +496,7 @@ class FooterSection extends StatelessWidget {
               InkWell(
                 onTap: () => launchUrl(Uri.parse('https://github.com/fluttergoo/open_baby_sara')),
                 child: Text(
-                  'Community',
+                  AppLocalizations.of(context)!.community,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: Theme.of(context).colorScheme.primary,
                     decoration: TextDecoration.underline,
@@ -491,7 +511,7 @@ class FooterSection extends StatelessWidget {
             TextButton(
               onPressed: () => Navigator.pushNamed(context, '/privacy-policy'),
               child: Text(
-                'Privacy Policy',
+                AppLocalizations.of(context)!.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                   decoration: TextDecoration.underline,
@@ -502,7 +522,7 @@ class FooterSection extends StatelessWidget {
             TextButton(
               onPressed: () => Navigator.pushNamed(context, '/terms-of-service'),
               child: Text(
-                'Terms of Service',
+                AppLocalizations.of(context)!.termsOfService,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                   decoration: TextDecoration.underline,

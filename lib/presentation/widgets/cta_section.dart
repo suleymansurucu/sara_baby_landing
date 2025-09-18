@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'max_width.dart';
+import '../../generated/l10n/app_localizations.dart';
 
 class CTASection extends StatelessWidget {
   const CTASection({super.key});
@@ -16,9 +17,9 @@ class CTASection extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.05),
-            Theme.of(context).colorScheme.secondary.withOpacity(0.08),
-            Theme.of(context).colorScheme.tertiary.withOpacity(0.03),
+            Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
+            Theme.of(context).colorScheme.secondary.withValues(alpha: 0.08),
+            Theme.of(context).colorScheme.tertiary.withValues(alpha: 0.03),
           ],
           stops: const [0.0, 0.5, 1.0],
         ),
@@ -36,8 +37,8 @@ class CTASection extends StatelessWidget {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                    Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
                     Colors.transparent,
                   ],
                 ),
@@ -54,8 +55,8 @@ class CTASection extends StatelessWidget {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.08),
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.03),
+                    Theme.of(context).colorScheme.secondary.withValues(alpha: 0.08),
+                    Theme.of(context).colorScheme.secondary.withValues(alpha: 0.03),
                     Colors.transparent,
                   ],
                 ),
@@ -72,17 +73,17 @@ class CTASection extends StatelessWidget {
                     end: Alignment.bottomRight,
                     colors: [
                       Theme.of(context).colorScheme.surface,
-                      Theme.of(context).colorScheme.surface.withOpacity(0.95),
+                      Theme.of(context).colorScheme.surface.withValues(alpha: 0.95),
                     ],
                   ),
                   borderRadius: BorderRadius.circular(28),
                   border: Border.all(
-                    color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+                    color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.1),
                     width: 1,
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.shadow.withOpacity(0.1),
+                      color: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.1),
                       blurRadius: 20,
                       offset: const Offset(0, 8),
                     ),
@@ -98,14 +99,14 @@ class CTASection extends StatelessWidget {
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
-                            Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                            Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                            Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                            Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
                           ],
                         ),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Text(
-                        '🚀 Get Started',
+                        AppLocalizations.of(context)!.getStarted,
                         style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.w600,
                           color: Theme.of(context).colorScheme.primary,
@@ -116,7 +117,7 @@ class CTASection extends StatelessWidget {
                     
                     // Main heading
                     Text(
-                      'Ready to make parenting easier?',
+                      AppLocalizations.of(context)!.readyToMakeParentingEasier,
                       style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                         fontWeight: FontWeight.w800,
                         color: Theme.of(context).colorScheme.onSurface,
@@ -127,7 +128,7 @@ class CTASection extends StatelessWidget {
                     
                     // Subtitle
                     Text(
-                      'Download Sara and start tracking your baby\'s development today. Join thousands of parents who trust Sara for their baby care journey.',
+                      AppLocalizations.of(context)!.downloadSaraDescription,
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Theme.of(context).colorScheme.onSurfaceVariant,
                         height: 1.4,
@@ -157,8 +158,8 @@ class CTASection extends StatelessWidget {
       children: [
         _buildDownloadButton(
           context: context,
-          title: 'App Store',
-          subtitle: 'Download for iOS',
+          title: AppLocalizations.of(context)!.appStore,
+          subtitle: AppLocalizations.of(context)!.downloadForIOS,
           imagePath: 'assets/logos/appstore_badge.png',
           onPressed: () => launchUrl(Uri.parse('https://apps.apple.com/us/app/sara-baby-tracker-sounds/id6746516938')),
           isPrimary: false,
@@ -166,8 +167,8 @@ class CTASection extends StatelessWidget {
         ),
         _buildDownloadButton(
           context: context,
-          title: 'Google Play',
-          subtitle: 'Download for Android',
+          title: AppLocalizations.of(context)!.googlePlay,
+          subtitle: AppLocalizations.of(context)!.downloadForAndroid,
           imagePath: 'assets/logos/googleplay_badge.png',
           onPressed: () => launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.suleymansurucu.sarababy')),
           isPrimary: true,
@@ -198,7 +199,7 @@ class CTASection extends StatelessWidget {
               ? LinearGradient(
                   colors: [
                     Theme.of(context).colorScheme.primary,
-                    Theme.of(context).colorScheme.primary.withOpacity(0.8),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.8),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -206,7 +207,7 @@ class CTASection extends StatelessWidget {
               : LinearGradient(
                   colors: [
                     Theme.of(context).colorScheme.surface,
-                    Theme.of(context).colorScheme.surface.withOpacity(0.9),
+                    Theme.of(context).colorScheme.surface.withValues(alpha: 0.9),
                   ],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
@@ -215,14 +216,14 @@ class CTASection extends StatelessWidget {
           border: Border.all(
             color: isPrimary
                 ? Colors.transparent
-                : Theme.of(context).colorScheme.outline.withOpacity(0.2),
+                : Theme.of(context).colorScheme.outline.withValues(alpha: 0.2),
             width: 1,
           ),
           boxShadow: [
             BoxShadow(
               color: isPrimary
-                  ? Theme.of(context).colorScheme.primary.withOpacity(0.3)
-                  : Theme.of(context).colorScheme.shadow.withOpacity(0.1),
+                  ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)
+                  : Theme.of(context).colorScheme.shadow.withValues(alpha: 0.1),
               blurRadius: isPrimary ? 12 : 8,
               offset: const Offset(0, 4),
             ),
@@ -256,7 +257,7 @@ class CTASection extends StatelessWidget {
                   subtitle,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: isPrimary
-                        ? Colors.white.withOpacity(0.9)
+                        ? Colors.white.withValues(alpha: 0.9)
                         : Theme.of(context).colorScheme.onSurfaceVariant,
                     fontSize: isMobile ? 11 : 12,
                   ),
@@ -304,12 +305,12 @@ class _HoverableCTACardState extends State<HoverableCTACard> {
                   borderRadius: BorderRadius.circular(28),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.primary.withOpacity(0.15),
+                      color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.15),
                       blurRadius: 24,
                       offset: const Offset(0, 12),
                     ),
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                      color: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
                       blurRadius: 32,
                       offset: const Offset(0, 16),
                     ),

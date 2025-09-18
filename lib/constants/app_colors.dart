@@ -24,7 +24,7 @@ class AppColors {
     onErrorContainer: Color(0xFF410002),
     surface: Color(0xFFFFFBFE),
     onSurface: Color(0xFF1C1B1F),
-    surfaceVariant: Color(0xFFE7E0EC),
+    surfaceContainerHighest: Color(0xFFE7E0EC),
     onSurfaceVariant: Color(0xFF49454F),
     outline: Color(0xFF79747E),
     outlineVariant: Color(0xFFCAC4D0),

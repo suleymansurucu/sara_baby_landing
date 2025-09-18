@@ -1,70 +1,75 @@
+import 'package:flutter/material.dart';
 import '../../domain/entities/feature.dart';
 import '../models/feature_model.dart';
+import '../../generated/l10n/app_localizations.dart';
 
 abstract class FeatureRepository {
-  Future<List<Feature>> getFeatures();
+  Future<List<Feature>> getFeatures(BuildContext context);
 }
 
 class FeatureRepositoryImpl implements FeatureRepository {
   @override
-  Future<List<Feature>> getFeatures() async {
+  Future<List<Feature>> getFeatures(BuildContext context) async {
+    // Capture localization data before async operation
+    final l10n = AppLocalizations.of(context)!;
+    
     // Simulate network delay
     await Future.delayed(const Duration(milliseconds: 100));
     
     return [
-      const FeatureModel(
+      FeatureModel(
         id: 'feeding_tracker',
-        title: 'Feeding Tracker',
-        description: 'Track every feeding session with ease—breastfeeding, bottle feeding, and pumping.',
+        title: l10n.featureFeedingTracker,
+        description: l10n.featureFeedingTrackerDescription,
         iconAsset: 'assets/images/feed.png',
         gradientColors: ['0xFFFF6B9D', '0xFFC44569'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'sleep_tracker',
-        title: 'Sleep Tracker',
-        description: 'Monitor sleep with precise timers and built-in white noise to help your baby sleep.',
+        title: l10n.featureSleepTracker,
+        description: l10n.featureSleepTrackerDescription,
         iconAsset: 'assets/images/sleep.png',
         gradientColors: ['0xFF667EEA', '0xFF764BA2'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'diaper_log',
-        title: 'Diaper Log',
-        description: 'Quickly log wet, dirty, or mixed diapers with easy shortcuts and history.',
+        title: l10n.featureDiaperLog,
+        description: l10n.featureDiaperLogDescription,
         iconAsset: 'assets/images/diaper.png',
         gradientColors: ['0xFFF093FB', '0xFFF5576C'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'growth_milestones',
-        title: 'Growth & Milestones',
-        description: 'Log weight, height, and track milestones, teething, and vaccinations.',
+        title: l10n.featureGrowthMilestones,
+        description: l10n.featureGrowthMilestonesDescription,
         iconAsset: 'assets/images/growth.png',
         gradientColors: ['0xFF4ECDC4', '0xFF44A08D'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'relaxing_sounds',
-        title: 'Relaxing Sounds',
-        description: 'Play soothing sounds and white noise to help your baby drift off.',
+        title: l10n.featureRelaxingSounds,
+        description: l10n.featureRelaxingSoundsDescription,
         iconAsset: 'assets/images/sounds_icon.png',
         gradientColors: ['0xFFA8E6CF', '0xFFDCEDC1'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'baby_recipes',
-        title: 'Baby Recipes',
-        description: 'Discover healthy, age-filtered recipes with ingredients and instructions.',
+        title: l10n.featureBabyRecipes,
+        description: l10n.featureBabyRecipesDescription,
         iconAsset: 'assets/images/recipe_icon.png',
         gradientColors: ['0xFFFFD93D', '0xFFFF8C42'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'activity_history',
-        title: 'Activity History',
-        description: 'View a clear timeline of your baby\'s day with search and filter options.',
+        title: l10n.featureActivityHistory,
+        description: l10n.featureActivityHistoryDescription,
         iconAsset: 'assets/images/activity_history.png',
         gradientColors: ['0xFF667EEA', '0xFF764BA2'],
       ),
-      const FeatureModel(
+      FeatureModel(
         id: 'shared_family_access',
-        title: 'Shared Family Access',
-        description: 'Collaborate with caregivers and easily switch between multiple babies.',
+        title: l10n.featureSharedFamilyAccess,
+        description: l10n.featureSharedFamilyAccessDescription,
         iconAsset: 'assets/images/share_family_icon.png',
         gradientColors: ['0xFFFF6B9D', '0xFFC44569'],
       ),

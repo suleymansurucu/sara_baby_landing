@@ -1,0 +1,26 @@
+# Robots.txt for Sara Baby Tracker & Sounds
+# https://www.sarababy.app/
+
+User-agent: *
+Allow: /
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /icons/
+Allow: /assets/
+Disallow: /flutter_service_worker.js
+Disallow: /flutter_bootstrap.js
+Disallow: /main.dart.js
+Disallow: /version.json
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.sarababy.app/sitemap.xml
+
+# Additional sitemaps (if needed in future)
+# Sitemap: https://www.sarababy.app/sitemap-images.xml
+# Sitemap: https://www.sarababy.app/sitemap-news.xml
+
+# Host directive (preferred domain)
+Host: https://www.sarababy.app

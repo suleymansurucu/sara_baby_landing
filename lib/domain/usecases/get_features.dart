@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import '../entities/feature.dart';
 import '../../data/repositories/feature_repository.dart';
 
@@ -6,7 +7,7 @@ class GetFeatures {
 
   GetFeatures(this._repository);
 
-  Future<List<Feature>> call() async {
-    return await _repository.getFeatures();
+  Future<List<Feature>> call(BuildContext context) async {
+    return await _repository.getFeatures(context);
   }
 }

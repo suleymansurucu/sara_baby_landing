@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/generated/l10n/app_localizations.dart';
 import 'max_width.dart';
 
 class ScreensSection extends StatefulWidget {
@@ -16,8 +17,8 @@ class _ScreensSectionState extends State<ScreensSection> {
     final screenshots = [
       ScreenshotData(
         imageAsset: 'assets/images/activity.png',
-        title: 'Activity Tracking',
-        description: 'Intuitive interface for logging all baby activities',
+        title: AppLocalizations.of(context)!.activityTracking,
+        description: AppLocalizations.of(context)!.activityTrackingDescription,
         gradient: const LinearGradient(
           colors: [Color(0xFFFF6B9D), Color(0xFFC44569)],
           begin: Alignment.topLeft,
@@ -26,8 +27,8 @@ class _ScreensSectionState extends State<ScreensSection> {
       ),
       ScreenshotData(
         imageAsset: 'assets/images/history.png',
-        title: 'History Timeline',
-        description: 'Beautiful timeline view of all recorded activities',
+        title: AppLocalizations.of(context)!.historyTimeline,
+        description: AppLocalizations.of(context)!.historyTimelineDescription,
         gradient: const LinearGradient(
           colors: [Color(0xFF667EEA), Color(0xFF764BA2)],
           begin: Alignment.topLeft,
@@ -36,8 +37,8 @@ class _ScreensSectionState extends State<ScreensSection> {
       ),
       ScreenshotData(
         imageAsset: 'assets/images/recipe.png',
-        title: 'Baby Food Recipes',
-        description: 'Age-appropriate recipes with nutritional information',
+        title: AppLocalizations.of(context)!.babyFoodRecipes,
+        description: AppLocalizations.of(context)!.babyFoodRecipesDescription,
         gradient: const LinearGradient(
           colors: [Color(0xFFFFD93D), Color(0xFFFF8C42)],
           begin: Alignment.topLeft,
@@ -46,8 +47,8 @@ class _ScreensSectionState extends State<ScreensSection> {
       ),
       ScreenshotData(
         imageAsset: 'assets/images/sound.png',
-        title: 'Relaxing Sounds',
-        description: 'Curated collection of soothing sounds for baby',
+        title: AppLocalizations.of(context)!.relaxingSounds,
+        description: AppLocalizations.of(context)!.relaxingSoundsDescription,
         gradient: const LinearGradient(
           colors: [Color(0xFFA8E6CF), Color(0xFFDCEDC1)],
           begin: Alignment.topLeft,
@@ -64,9 +65,9 @@ class _ScreensSectionState extends State<ScreensSection> {
           end: Alignment.bottomRight,
           colors: [
             Theme.of(context).colorScheme.surface,
-            Theme.of(context).colorScheme.primary.withOpacity(0.03),
-            Theme.of(context).colorScheme.secondary.withOpacity(0.05),
-            Theme.of(context).colorScheme.tertiary.withOpacity(0.02),
+            Theme.of(context).colorScheme.primary.withValues(alpha: 0.03),
+            Theme.of(context).colorScheme.secondary.withValues(alpha: 0.05),
+            Theme.of(context).colorScheme.tertiary.withValues(alpha: 0.02),
           ],
           stops: const [0.0, 0.3, 0.7, 1.0],
         ),
@@ -84,8 +85,8 @@ class _ScreensSectionState extends State<ScreensSection> {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                    Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                    Theme.of(context).colorScheme.primary.withValues(alpha: 0.05),
                     Colors.transparent,
                   ],
                 ),
@@ -102,8 +103,8 @@ class _ScreensSectionState extends State<ScreensSection> {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.08),
-                    Theme.of(context).colorScheme.secondary.withOpacity(0.03),
+                    Theme.of(context).colorScheme.secondary.withValues(alpha: 0.08),
+                    Theme.of(context).colorScheme.secondary.withValues(alpha: 0.03),
                     Colors.transparent,
                   ],
                 ),
@@ -126,14 +127,14 @@ class _ScreensSectionState extends State<ScreensSection> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Theme.of(context).colorScheme.primary.withOpacity(0.1),
-                              Theme.of(context).colorScheme.secondary.withOpacity(0.1),
+                              Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                              Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
                             ],
                           ),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          '📱 Screenshots',
+                          AppLocalizations.of(context)!.screenshotsTitle,
                           style: Theme.of(context).textTheme.titleMedium?.copyWith(
                             fontWeight: FontWeight.w600,
                             color: Theme.of(context).colorScheme.primary,
@@ -142,7 +143,7 @@ class _ScreensSectionState extends State<ScreensSection> {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        'See Sara in Action',
+                        AppLocalizations.of(context)!.screenshotsSubtitle,
                         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                           fontWeight: FontWeight.w800,
                           color: Theme.of(context).colorScheme.onSurface,
@@ -150,7 +151,7 @@ class _ScreensSectionState extends State<ScreensSection> {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Experience our beautifully designed interface that makes baby tracking simple and intuitive.',
+                        AppLocalizations.of(context)!.screenshotsDescription,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           color: Theme.of(context).colorScheme.onSurfaceVariant,
                           height: 1.4,
@@ -198,7 +199,7 @@ class _ScreensSectionState extends State<ScreensSection> {
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Row(
@@ -211,7 +212,7 @@ class _ScreensSectionState extends State<ScreensSection> {
               ),
               const SizedBox(width: 8),
               Text(
-                'Swipe',
+                AppLocalizations.of(context)!.swipe,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: Theme.of(context).colorScheme.primary,
                   fontWeight: FontWeight.w600,
@@ -265,7 +266,7 @@ class _ScreensSectionState extends State<ScreensSection> {
   }
 
   Widget _buildPhoneMockup(BuildContext context, String imageAsset) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: double.infinity,
       child: Center(
@@ -276,7 +277,7 @@ class _ScreensSectionState extends State<ScreensSection> {
             borderRadius: BorderRadius.circular(25),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withValues(alpha: 0.2),
                 blurRadius: 15,
                 offset: const Offset(0, 8),
               ),
@@ -324,7 +325,7 @@ class _ScreensSectionState extends State<ScreensSection> {
           color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: Theme.of(context).colorScheme.outline.withOpacity(0.1),
+            color: Theme.of(context).colorScheme.outline.withValues(alpha: 0.1),
             width: 1,
           ),
         ),
@@ -420,12 +421,12 @@ class _HoverableScreenshotCardState extends State<HoverableScreenshotCard> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: widget.gradient.colors.first.withOpacity(0.15),
+                      color: widget.gradient.colors.first.withValues(alpha: 0.15),
                       blurRadius: 20,
                       offset: const Offset(0, 8),
                     ),
                     BoxShadow(
-                      color: widget.gradient.colors.last.withOpacity(0.1),
+                      color: widget.gradient.colors.last.withValues(alpha: 0.1),
                       blurRadius: 30,
                       offset: const Offset(0, 12),
                     ),
@@ -435,7 +436,7 @@ class _HoverableScreenshotCardState extends State<HoverableScreenshotCard> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Theme.of(context).colorScheme.shadow.withOpacity(0.06),
+                      color: Theme.of(context).colorScheme.shadow.withValues(alpha: 0.06),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
