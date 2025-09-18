@@ -1,0 +1,497 @@
+{
+  "@@locale": "zh",
+  "appTitle": "萨拉婴儿追踪器和声音",
+  "home": "首页",
+  "features": "功能",
+  "screens": "屏幕",
+  "developer": "开发者",
+  "faq": "常见问题",
+  "getTheApp": "获取应用",
+  "getStartedToday": "今天开始",
+  "appStore": "应用商店",
+  "googlePlay": "谷歌游戏",
+  "perfectRating": "完美评分",
+  "parentsCount": "1000+ 父母",
+  "noAds": "无广告",
+  "language": "语言",
+  "selectLanguage": "选择语言",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "加载内容时出错：{error}",
+  "retry": "重试",
+  "download": "下载",
+  "cancel": "取消",
+  "faqTitle": "❓ 常见问题",
+  "faqSubtitle": "常见问题",
+  "faqDescription": "找到关于萨拉婴儿追踪器的常见问题答案。",
+  "developerTitle": "✨ 萨拉完全开源",
+  "developerDescription": "探索代码，打开问题，并为让萨拉变得更好做出贡献。",
+  "developerCommunity": "Flutter Goo 开源社区",
+  "developerMission": "为新父母构建现代解决方案",
+  "developerAbout": "我们是一个充满激情的开源社区，致力于为新父母创建现代、直观和可访问的解决方案。我们的使命是通过创新技术、简洁设计和社区驱动的开发让育儿变得更容易。加入我们，构建帮助家庭跟踪、培养和庆祝他们宝宝旅程中每个珍贵时刻的工具。",
+  "viewGitHub": "查看 GitHub",
+  "community": "社区",
+  "email": "电子邮件",
+  "screenshotsTitle": "📱 截图",
+  "screenshotsSubtitle": "看萨拉在行动",
+  "screenshotsDescription": "体验我们精美设计的界面，让婴儿跟踪变得简单直观。",
+  "swipe": "滑动",
+  "footerTitle": "萨拉婴儿追踪器和声音",
+  "footerDescription": "新父母的终极伴侣。轻松跟踪您宝宝的活动、成长和睡眠模式。",
+  "footerSubtitle": "新父母的终极伴侣",
+  "footerAbout": "轻松跟踪您宝宝的活动、成长和睡眠模式。为想要给孩子最好的父母而用心打造。",
+  "downloadNow": "立即下载",
+  "keyFeatures": "主要功能",
+  "supportResources": "支持和资源",
+  "connectWithUs": "联系我们",
+  "copyright": "© {year} 萨拉婴儿追踪器和声音 — ",
+  "privacyPolicy": "隐私政策",
+  "termsOfService": "服务条款",
+  "featuresTitle": "✨ 功能",
+  "featuresSubtitle": "完整的婴儿护理解决方案",
+  "featuresDescription": "跟踪您宝宝发育和创造养育环境所需的一切。",
+  "termsOfServiceTitle": "服务条款",
+  "lastUpdated": "最后更新：2025年9月17日",
+  "madeWithLove": "由 FlutterGoo 用 ❤️ 制作",
+  "termsWelcome": "欢迎使用萨拉婴儿追踪器和声音（\"应用程序\"）。这些服务条款（\"条款\"）管理您对我们移动应用程序和相关服务的使用。通过下载、安装或使用应用程序，您同意受这些条款约束。",
+  "contactInformation": "10. 联系信息",
+  "contactDescription": "如果您对这些服务条款有任何疑问，请联系我们：",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "隐私政策",
+  "privacyWelcome": "萨拉婴儿追踪器和声音（\"应用程序\"）由开源社区项目 FlutterGoo 开发和维护。我们致力于保护您的隐私并确保关于如何处理您数据的透明度。",
+  "contactUs": "8. 联系我们",
+  "privacyContactDescription": "如果您对此隐私政策有任何疑问或担忧，您可以联系我们：",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "获取应用",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "首页",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "activityTracking": "活动追踪",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "记录所有婴儿活动的直观界面",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "历史时间线",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "所有记录活动的美丽时间线视图",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "婴儿食品食谱",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "适合年龄的食谱，包含营养信息",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "放松声音",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "为婴儿精心策划的舒缓声音集合",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 开始",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "准备好让育儿更轻松了吗？",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "下载萨拉，今天就开始追踪您宝宝的发育。加入数千名信任萨拉进行婴儿护理之旅的父母。",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "为iOS下载",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "为Android下载",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "用萨拉婴儿追踪每个珍贵时刻",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "与您的家庭一起成长的完整婴儿护理伴侣。追踪睡眠、喂养、成长等 - 100%免费，永远。",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "什么是萨拉婴儿追踪器？",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "萨拉是一个全面的婴儿追踪应用程序，帮助父母和护理人员监控喂养、睡眠、尿布更换、成长里程碑等。它还包括舒缓声音和婴儿食品食谱。",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "萨拉是免费的吗？",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "是的！萨拉完全免费且开源。您可以从App Store或Google Play Store免费下载。",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "我的数据如何受到保护？",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "萨拉在设计时考虑了隐私。所有数据都本地存储在您的设备上，不会与第三方共享。您对您的信息有完全的控制权。",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "我可以追踪多个婴儿吗？",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "是的！萨拉支持追踪多个婴儿，并允许您在它们之间轻松切换。非常适合有双胞胎或多个孩子的家庭。",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "萨拉可以离线工作吗？",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "当然！萨拉完全离线工作。您的所有数据都本地存储在您的设备上，因此您可以在任何地方使用它，无需互联网连接。",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "我可以备份我的数据吗？",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "是的，萨拉提供备份和恢复数据的选项。您可以导出数据并在其他设备上导入，或在需要时恢复。",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "喂养追踪器",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "轻松追踪每次喂养会话 - 母乳喂养、奶瓶喂养和泵奶。",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "睡眠追踪器",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "使用精确的计时器和内置白噪音监控睡眠，帮助您的宝宝入睡。",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "尿布日志",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "使用简单的快捷方式和历史记录快速记录湿的、脏的或混合的尿布。",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "成长和里程碑",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "记录体重、身高并追踪里程碑、出牙和疫苗接种。",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "放松声音",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "播放舒缓的声音和白噪音，帮助您的宝宝入睡。",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "婴儿食谱",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "发现按年龄过滤的健康食谱，包含配料和说明。",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "活动历史",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "查看您宝宝一天的清晰时间线，包含搜索和过滤选项。",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "共享家庭访问",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "与护理人员协作，轻松在多个婴儿之间切换。",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "communityFluttergoo": "FlutterGoo 社区",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "GitHub 页面",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "认识社区创始人",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

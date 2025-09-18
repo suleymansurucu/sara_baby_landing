@@ -1,0 +1,497 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Sara Bebek Takipçisi ve Sesler",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "home": "Ana Sayfa",
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "features": "Özellikler",
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "screens": "Ekranlar",
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "developer": "Geliştirici",
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "faq": "SSS",
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "getTheApp": "Uygulamayı İndir",
+  "getStartedToday": "Bugün Başlayın",
+  "appStore": "App Store",
+  "googlePlay": "Google Play",
+  "perfectRating": "Mükemmel Değerlendirme",
+  "parentsCount": "1000+ Ebeveyn",
+  "noAds": "Reklamsız",
+  "language": "Dil",
+  "selectLanguage": "Dil Seçin",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "İçerik yüklenirken hata: {error}",
+  "retry": "Tekrar Dene",
+  "download": "İndir",
+  "cancel": "İptal",
+  "faqTitle": "❓ SSS",
+  "faqSubtitle": "Sıkça Sorulan Sorular",
+  "faqDescription": "Sara Bebek Takipçisi hakkında yaygın soruların cevaplarını bulun.",
+  "developerTitle": "✨ Sara tamamen açık kaynak",
+  "developerDescription": "Kodu keşfedin, sorunları açın ve Sara'yı daha da iyi hale getirmek için katkıda bulunun.",
+  "developerCommunity": "Flutter Goo Açık Kaynak Topluluğu",
+  "developerMission": "Yeni Ebeveynler İçin Modern Çözümler Geliştirme",
+  "developerAbout": "Yeni ebeveynler için modern, sezgisel ve erişilebilir çözümler yaratmaya adanmış tutkulu bir açık kaynak topluluğuyuz. Misyonumuz, yenilikçi teknoloji, temiz tasarım ve topluluk odaklı geliştirme yoluyla ebeveynliği kolaylaştırmaktır. Ailelerin bebeklerinin yolculuğunun her değerli anını takip etmelerine, beslemelerine ve kutlamalarına yardımcı olan araçlar geliştirmek için bize katılın.",
+  "viewGitHub": "GitHub'ı Görüntüle",
+  "community": "Topluluk",
+  "email": "E-posta",
+  "screenshotsTitle": "📱 Ekran Görüntüleri",
+  "screenshotsSubtitle": "Sara'yı Aksiyonda Görün",
+  "screenshotsDescription": "Bebek takibini basit ve sezgisel hale getiren güzel tasarlanmış arayüzümüzü deneyimleyin.",
+  "swipe": "Kaydır",
+  "footerTitle": "Sara Bebek Takipçisi ve Sesler",
+  "footerDescription": "Yeni ebeveynler için nihai arkadaş. Bebeğinizin aktivitelerini, büyümesini ve uyku düzenlerini kolayca takip edin.",
+  "footerSubtitle": "Yeni ebeveynler için nihai arkadaş",
+  "footerAbout": "Bebeğinizin aktivitelerini, büyümesini ve uyku düzenlerini kolayca takip edin. Küçükleri için en iyisini isteyen ebeveynler için sevgiyle yapılmıştır.",
+  "downloadNow": "Şimdi İndir",
+  "keyFeatures": "Ana Özellikler",
+  "supportResources": "Destek ve Kaynaklar",
+  "connectWithUs": "Bizimle İletişime Geçin",
+  "copyright": "© {year} Sara Bebek Takipçisi ve Sesler — ",
+  "privacyPolicy": "Gizlilik Politikası",
+  "termsOfService": "Hizmet Şartları",
+  "featuresTitle": "✨ Özellikler",
+  "featuresSubtitle": "Kapsamlı Bebek Bakım Çözümü",
+  "featuresDescription": "Bebeğinizin gelişimini takip etmek ve besleyici bir ortam yaratmak için ihtiyacınız olan her şey.",
+  "termsOfServiceTitle": "Hizmet Şartları",
+  "lastUpdated": "Son Güncelleme: 17 Eylül 2025",
+  "madeWithLove": "FlutterGoo tarafından ❤️ ile yapılmıştır",
+  "termsWelcome": "Sara Bebek Takipçisi ve Sesler'e (\"Uygulama\") hoş geldiniz. Bu Hizmet Şartları (\"Şartlar\"), mobil uygulamamız ve ilgili hizmetlerimizi kullanımınızı yönetir. Uygulamayı indirerek, yükleyerek veya kullanarak bu Şartlara bağlı olmayı kabul edersiniz.",
+  "contactInformation": "10. İletişim Bilgileri",
+  "contactDescription": "Bu Hizmet Şartları hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "Gizlilik Politikası",
+  "privacyWelcome": "Sara Bebek Takipçisi ve Sesler (\"Uygulama\"), açık kaynak topluluk projesi FlutterGoo tarafından geliştirilmekte ve sürdürülmektedir. Gizliliğinizi korumaya ve verilerinizin nasıl işlendiği konusunda şeffaflık sağlamaya kararlıyız.",
+  "contactUs": "8. Bizimle İletişime Geçin",
+  "privacyContactDescription": "Bu Gizlilik Politikası hakkında herhangi bir sorunuz veya endişeniz varsa, bize ulaşabilirsiniz:",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "activityTracking": "Aktivite Takibi",
+  "activityTrackingDescription": "Tüm bebek aktivitelerini kaydetmek için sezgisel arayüz",
+  "historyTimeline": "Geçmiş Zaman Çizelgesi",
+  "historyTimelineDescription": "Kaydedilen tüm aktivitelerin güzel zaman çizelgesi görünümü",
+  "babyFoodRecipes": "Bebek Yemek Tarifleri",
+  "babyFoodRecipesDescription": "Beslenme bilgileri ile yaşa uygun tarifler",
+  "relaxingSounds": "Rahatlatıcı Sesler",
+  "relaxingSoundsDescription": "Bebek için özenle seçilmiş sakinleştirici sesler koleksiyonu",
+  "getStarted": "🚀 Başlayın",
+  "readyToMakeParentingEasier": "Ebeveynliği kolaylaştırmaya hazır mısınız?",
+  "downloadSaraDescription": "Sara'yı indirin ve bebeğinizin gelişimini bugün takip etmeye başlayın. Bebek bakım yolculuklarında Sara'ya güvenen binlerce ebeveyne katılın.",
+  "downloadForIOS": "iOS için İndir",
+  "downloadForAndroid": "Android için İndir",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "Sara Baby ile Her Değerli Anı Takip Edin",
+  "appTagline": "Ailenizle birlikte büyüyen kapsamlı bebek bakım arkadaşı. Uyku, beslenme, büyüme ve daha fazlasını takip edin - %100 ücretsiz, sonsuza kadar.",
+  "faqWhatIsSara": "Sara Bebek Takipçisi nedir?",
+  "faqWhatIsSaraAnswer": "Sara, ebeveynlerin ve bakıcıların beslenme, uyku, bez değişimi, büyüme kilometre taşları ve daha fazlasını izlemesine yardımcı olan kapsamlı bir bebek takip uygulamasıdır. Ayrıca sakinleştirici sesler ve bebek yemek tarifleri de içerir.",
+  "faqIsFree": "Sara ücretsiz mi?",
+  "faqIsFreeAnswer": "Evet! Sara tamamen ücretsiz ve açık kaynaklıdır. App Store veya Google Play Store'dan hiçbir ücret ödemeden indirebilirsiniz.",
+  "faqPrivacyData": "Verilerim nasıl korunuyor?",
+  "faqPrivacyDataAnswer": "Sara gizlilik düşünülerek tasarlanmıştır. Tüm veriler cihazınızda yerel olarak saklanır ve üçüncü taraflarla paylaşılmaz. Bilgileriniz üzerinde tam kontrolünüz vardır.",
+  "faqMultipleBabies": "Birden fazla bebeği takip edebilir miyim?",
+  "faqMultipleBabiesAnswer": "Evet! Sara birden fazla bebeği takip etmeyi destekler ve aralarında kolayca geçiş yapmanıza olanak tanır. İkiz veya birden fazla çocuğu olan aileler için mükemmel.",
+  "faqOfflineUse": "Sara çevrimdışı çalışır mı?",
+  "faqOfflineUseAnswer": "Kesinlikle! Sara tamamen çevrimdışı çalışır. Tüm verileriniz cihazınızda yerel olarak saklandığı için internet bağlantısı olmadan her yerde kullanabilirsiniz.",
+  "faqBackupData": "Verilerimi yedekleyebilir miyim?",
+  "faqBackupDataAnswer": "Evet, Sara verilerinizi yedekleme ve geri yükleme seçenekleri sunar. Verilerinizi dışa aktarabilir ve diğer cihazlara aktarabilir veya gerektiğinde geri yükleyebilirsiniz.",
+  "featureFeedingTracker": "Beslenme Takipçisi",
+  "featureFeedingTrackerDescription": "Her beslenme seansını kolayca takip edin—emzirme, biberon besleme ve pompalama.",
+  "featureSleepTracker": "Uyku Takipçisi",
+  "featureSleepTrackerDescription": "Bebeğinizin uyumasına yardımcı olmak için hassas zamanlayıcılar ve yerleşik beyaz gürültü ile uykuyu izleyin.",
+  "featureDiaperLog": "Bez Günlüğü",
+  "featureDiaperLogDescription": "Kolay kısayollar ve geçmiş ile ıslak, kirli veya karışık bezleri hızlıca kaydedin.",
+  "featureGrowthMilestones": "Büyüme ve Kilometre Taşları",
+  "featureGrowthMilestonesDescription": "Kilo, boy kaydedin ve kilometre taşları, diş çıkarma ve aşıları takip edin.",
+  "featureRelaxingSounds": "Rahatlatıcı Sesler",
+  "featureRelaxingSoundsDescription": "Bebeğinizin uykuya dalmasına yardımcı olmak için sakinleştirici sesler ve beyaz gürültü çalın.",
+  "featureBabyRecipes": "Bebek Tarifleri",
+  "featureBabyRecipesDescription": "Malzemeler ve talimatlarla sağlıklı, yaşa uygun tarifler keşfedin.",
+  "featureActivityHistory": "Aktivite Geçmişi",
+  "featureActivityHistoryDescription": "Arama ve filtreleme seçenekleri ile bebeğinizin gününün net bir zaman çizelgesini görüntüleyin.",
+  "featureSharedFamilyAccess": "Paylaşımlı Aile Erişimi",
+  "featureSharedFamilyAccessDescription": "Bakıcılarla işbirliği yapın ve birden fazla bebek arasında kolayca geçiş yapın.",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "appTitleHeader": "Sara Bebek Takipçisi ve Sesler",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "Uygulamayı İndir",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "Ana Sayfa",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "communityFluttergoo": "FlutterGoo Topluluğu",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "GitHub Sayfası",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "Topluluk Kurucusu ile Tanışın",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

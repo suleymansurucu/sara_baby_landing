@@ -1,0 +1,497 @@
+{
+  "@@locale": "en",
+  "appTitle": "Sara Baby Tracker & Sounds",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "features": "Features",
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "screens": "Screens",
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "developer": "Developer",
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "faq": "FAQ",
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "getTheApp": "Get the App",
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "getStartedToday": "Get Started Today",
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "appStore": "App Store",
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "googlePlay": "Google Play",
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "perfectRating": "Perfect Rating",
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "parentsCount": "1000+ Parents",
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "noAds": "No Ads",
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language selector label"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "english": "English",
+  "@english": {
+    "description": "English language option"
+  },
+  "turkish": "Türkçe",
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "german": "Deutsch",
+  "@german": {
+    "description": "German language option"
+  },
+  "spanish": "Español",
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "french": "Français",
+  "@french": {
+    "description": "French language option"
+  },
+  "arabic": "العربية",
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "chinese": "中文",
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "dutch": "Nederlands",
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "russian": "Русский",
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "korean": "한국어",
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "indonesian": "Bahasa Indonesia",
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "errorLoadingContent": "Error loading content: {error}",
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "download": "Download",
+  "@download": {
+    "description": "Download button text"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "faqTitle": "❓ FAQ",
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "faqSubtitle": "Frequently Asked Questions",
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "faqDescription": "Find answers to common questions about Sara Baby Tracker.",
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "developerTitle": "✨ Sara is fully open-source",
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "developerDescription": "Explore the code, open issues, and contribute to make Sara even better.",
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "developerCommunity": "Flutter Goo Open Source Community",
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "developerMission": "Building Modern Solutions for New Parents",
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "developerAbout": "We are a passionate open-source community dedicated to creating modern, intuitive, and accessible solutions for new parents. Our mission is to make parenting easier through innovative technology, clean design, and community-driven development. Join us in building tools that help families track, nurture, and celebrate every precious moment of their baby's journey.",
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "viewGitHub": "View GitHub",
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "community": "Community",
+  "@community": {
+    "description": "Community button text"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email button text"
+  },
+  "screenshotsTitle": "📱 Screenshots",
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "screenshotsSubtitle": "See Sara in Action",
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "screenshotsDescription": "Experience our beautifully designed interface that makes baby tracking simple and intuitive.",
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "swipe": "Swipe",
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "footerTitle": "Sara Baby Tracker & Sounds",
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "footerDescription": "The ultimate companion for new parents. Track your baby's activities, growth, and sleep patterns with ease.",
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "footerSubtitle": "The ultimate companion for new parents",
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "footerAbout": "Track your baby's activities, growth, and sleep patterns with ease. Built with love for parents who want the best for their little ones.",
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "downloadNow": "Download Now",
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "keyFeatures": "Key Features",
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "supportResources": "Support & Resources",
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "connectWithUs": "Connect With Us",
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "copyright": "© {year} Sara Baby Tracker & Sounds — ",
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "featuresTitle": "✨ Features",
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "featuresSubtitle": "Complete Baby Care Solution",
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "featuresDescription": "Everything you need to track your baby's development and create a nurturing environment.",
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "termsOfServiceTitle": "Terms of Service",
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "lastUpdated": "Last Updated: September 17, 2025",
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "madeWithLove": "Made with ❤️ by FlutterGoo",
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "termsWelcome": "Welcome to Sara Baby Tracker & Sounds (\"the App\"). These Terms of Service (\"Terms\") govern your use of our mobile application and related services. By downloading, installing, or using the App, you agree to be bound by these Terms.",
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "contactInformation": "10. Contact Information",
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "contactDescription": "If you have any questions about these Terms of Service, please contact us:",
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "privacyPolicyTitle": "Privacy Policy",
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "privacyWelcome": "Sara Baby Tracker & Sounds (\"the App\") is developed and maintained by FlutterGoo, an open-source community project. We are committed to protecting your privacy and ensuring transparency about how your data is handled.",
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "contactUs": "8. Contact Us",
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "privacyContactDescription": "If you have any questions or concerns about this Privacy Policy, you can reach us at:",
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "activityTracking": "Activity Tracking",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "Intuitive interface for logging all baby activities",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "History Timeline",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "Beautiful timeline view of all recorded activities",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "Baby Food Recipes",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "Age-appropriate recipes with nutritional information",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "Relaxing Sounds",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "Curated collection of soothing sounds for baby",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 Get Started",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "Ready to make parenting easier?",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "Download Sara and start tracking your baby's development today. Join thousands of parents who trust Sara for their baby care journey.",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "Download for iOS",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "Download for Android",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "Track Every Precious Moment with Sara Baby",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "The complete baby care companion that grows with your family. Track sleep, feeding, growth & more - 100% free, forever.",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "What is Sara Baby Tracker?",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "Sara is a comprehensive baby tracking app that helps parents and caregivers monitor feeding, sleep, diaper changes, growth milestones, and more. It also includes soothing sounds and baby food recipes.",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "Is Sara free to use?",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "Yes! Sara is completely free and open-source. You can download it from the App Store or Google Play Store at no cost.",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "How is my data protected?",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "Sara is designed with privacy in mind. All data is stored locally on your device and is not shared with third parties. You have complete control over your information.",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "Can I track multiple babies?",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "Yes! Sara supports tracking multiple babies and allows you to easily switch between them. Perfect for families with twins or multiple children.",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "Does Sara work offline?",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "Absolutely! Sara works completely offline. All your data is stored locally on your device, so you can use it anywhere without an internet connection.",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "Can I backup my data?",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "Yes, Sara provides options to backup and restore your data. You can export your data and import it on other devices or restore it if needed.",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "Feeding Tracker",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "Track every feeding session with ease—breastfeeding, bottle feeding, and pumping.",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "Sleep Tracker",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "Monitor sleep with precise timers and built-in white noise to help your baby sleep.",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "Diaper Log",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "Quickly log wet, dirty, or mixed diapers with easy shortcuts and history.",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "Growth & Milestones",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "Log weight, height, and track milestones, teething, and vaccinations.",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "Relaxing Sounds",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "Play soothing sounds and white noise to help your baby drift off.",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "Baby Recipes",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "Discover healthy, age-filtered recipes with ingredients and instructions.",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "Activity History",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "View a clear timeline of your baby's day with search and filter options.",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "Shared Family Access",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "Collaborate with caregivers and easily switch between multiple babies.",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "Get the App",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "Home",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "communityFluttergoo": "Community FlutterGoo",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "GitHub Page",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "Meet Community Founder",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "@@locale": "ar",
+  "appTitle": "سارة متتبع الأطفال والأصوات",
+  "home": "الرئيسية",
+  "features": "الميزات",
+  "screens": "الشاشات",
+  "developer": "المطور",
+  "faq": "الأسئلة الشائعة",
+  "getTheApp": "احصل على التطبيق",
+  "getStartedToday": "ابدأ اليوم",
+  "appStore": "متجر التطبيقات",
+  "googlePlay": "جوجل بلاي",
+  "perfectRating": "تقييم مثالي",
+  "parentsCount": "1000+ والد",
+  "noAds": "بدون إعلانات",
+  "language": "اللغة",
+  "selectLanguage": "اختر اللغة",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "خطأ في تحميل المحتوى: {error}",
+  "retry": "إعادة المحاولة",
+  "download": "تحميل",
+  "cancel": "إلغاء",
+  "faqTitle": "❓ الأسئلة الشائعة",
+  "faqSubtitle": "الأسئلة الشائعة",
+  "faqDescription": "اعثر على إجابات للأسئلة الشائعة حول متتبع سارة للأطفال.",
+  "developerTitle": "✨ سارة مفتوحة المصدر بالكامل",
+  "developerDescription": "استكشف الكود، وافتح المشاكل، وساهم في جعل سارة أفضل.",
+  "developerCommunity": "مجتمع Flutter Goo مفتوح المصدر",
+  "developerMission": "بناء حلول حديثة للآباء الجدد",
+  "developerAbout": "نحن مجتمع مفتوح المصدر متحمس مكرس لإنشاء حلول حديثة وبديهية ومتاحة للآباء الجدد. مهمتنا هي جعل الأبوة أسهل من خلال التكنولوجيا المبتكرة والتصميم النظيف والتطوير الموجه من المجتمع. انضم إلينا في بناء أدوات تساعد العائلات على تتبع ورعاية والاحتفال بكل لحظة ثمينة من رحلة طفلهم.",
+  "viewGitHub": "عرض GitHub",
+  "community": "المجتمع",
+  "email": "البريد الإلكتروني",
+  "screenshotsTitle": "📱 لقطات الشاشة",
+  "screenshotsSubtitle": "شاهد سارة في العمل",
+  "screenshotsDescription": "اختبر واجهتنا المصممة بشكل جميل التي تجعل تتبع الأطفال بسيطاً وبديهياً.",
+  "swipe": "اسحب",
+  "footerTitle": "سارة متتبع الأطفال والأصوات",
+  "footerDescription": "الرفيق المثالي للآباء الجدد. تتبع أنشطة طفلك ونموه وأنماط نومه بسهولة.",
+  "footerSubtitle": "الرفيق المثالي للآباء الجدد",
+  "footerAbout": "تتبع أنشطة طفلك ونموه وأنماط نومه بسهولة. مبني بحب للآباء الذين يريدون الأفضل لأطفالهم الصغار.",
+  "downloadNow": "تحميل الآن",
+  "keyFeatures": "الميزات الرئيسية",
+  "supportResources": "الدعم والموارد",
+  "connectWithUs": "تواصل معنا",
+  "copyright": "© {year} سارة متتبع الأطفال والأصوات — ",
+  "privacyPolicy": "سياسة الخصوصية",
+  "termsOfService": "شروط الخدمة",
+  "featuresTitle": "✨ الميزات",
+  "featuresSubtitle": "حل شامل لرعاية الأطفال",
+  "featuresDescription": "كل ما تحتاجه لتتبع نمو طفلك وإنشاء بيئة رعائية.",
+  "termsOfServiceTitle": "شروط الخدمة",
+  "lastUpdated": "آخر تحديث: 17 سبتمبر 2025",
+  "madeWithLove": "صُنع بـ ❤️ بواسطة FlutterGoo",
+  "termsWelcome": "مرحباً بك في سارة متتبع الأطفال والأصوات (\"التطبيق\"). تحكم شروط الخدمة هذه (\"الشروط\") في استخدامك لتطبيقنا المحمول والخدمات ذات الصلة. بتحميل أو تثبيت أو استخدام التطبيق، فإنك توافق على الالتزام بهذه الشروط.",
+  "contactInformation": "10. معلومات الاتصال",
+  "contactDescription": "إذا كان لديك أي أسئلة حول شروط الخدمة هذه، يرجى الاتصال بنا:",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "سياسة الخصوصية",
+  "privacyWelcome": "يتم تطوير وصيانة سارة متتبع الأطفال والأصوات (\"التطبيق\") بواسطة FlutterGoo، وهو مشروع مجتمعي مفتوح المصدر. نحن ملتزمون بحماية خصوصيتك وضمان الشفافية حول كيفية التعامل مع بياناتك.",
+  "contactUs": "8. تواصل معنا",
+  "privacyContactDescription": "إذا كان لديك أي أسئلة أو مخاوف حول سياسة الخصوصية هذه، يمكنك الوصول إلينا:",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "احصل على التطبيق",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "الرئيسية",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "activityTracking": "تتبع الأنشطة",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "واجهة بديهية لتسجيل جميع أنشطة الطفل",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "الجدول الزمني للتاريخ",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "عرض جميل للجدول الزمني لجميع الأنشطة المسجلة",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "وصفات طعام الأطفال",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "وصفات مناسبة للعمر مع معلومات غذائية",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "أصوات مريحة",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "مجموعة مختارة من الأصوات المهدئة للطفل",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 ابدأ الآن",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "هل أنت مستعد لجعل الأبوة أسهل؟",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "حمل سارة وابدأ في تتبع نمو طفلك اليوم. انضم إلى آلاف الآباء الذين يثقون في سارة لرحلة رعاية أطفالهم.",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "تحميل لـ iOS",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "تحميل لـ Android",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "تتبع كل لحظة ثمينة مع سارة بيبي",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "رفيق رعاية الأطفال الكامل الذي ينمو مع عائلتك. تتبع النوم والتغذية والنمو والمزيد - مجاني 100%، إلى الأبد.",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "ما هو متتبع سارة للأطفال؟",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "سارة هو تطبيق شامل لتتبع الأطفال يساعد الآباء ومقدمي الرعاية على مراقبة التغذية والنوم وتغيير الحفاضات ومعالم النمو والمزيد. كما يتضمن أصوات مهدئة ووصفات طعام للأطفال.",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "هل سارة مجاني للاستخدام؟",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "نعم! سارة مجاني تماماً ومفتوح المصدر. يمكنك تحميله من متجر التطبيقات أو متجر جوجل بلاي بدون أي تكلفة.",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "كيف يتم حماية بياناتي؟",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "تم تصميم سارة مع مراعاة الخصوصية. جميع البيانات مخزنة محلياً على جهازك ولا يتم مشاركتها مع أطراف ثالثة. لديك سيطرة كاملة على معلوماتك.",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "هل يمكنني تتبع عدة أطفال؟",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "نعم! سارة يدعم تتبع عدة أطفال ويسمح لك بالتبديل بسهولة بينهم. مثالي للعائلات التي لديها توائم أو عدة أطفال.",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "هل يعمل سارة بدون اتصال بالإنترنت؟",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "بالتأكيد! سارة يعمل تماماً بدون اتصال بالإنترنت. جميع بياناتك مخزنة محلياً على جهازك، لذا يمكنك استخدامه في أي مكان بدون اتصال بالإنترنت.",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "هل يمكنني نسخ بياناتي احتياطياً؟",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "نعم، سارة يوفر خيارات لنسخ بياناتك احتياطياً واستعادتها. يمكنك تصدير بياناتك واستيرادها على أجهزة أخرى أو استعادتها عند الحاجة.",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "متتبع التغذية",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "تتبع كل جلسة تغذية بسهولة - الرضاعة الطبيعية، الرضاعة بالزجاجة، والضخ.",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "متتبع النوم",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "راقب النوم بمؤقتات دقيقة وضوضاء بيضاء مدمجة لمساعدة طفلك على النوم.",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "سجل الحفاضات",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "سجل بسرعة الحفاضات المبللة أو المتسخة أو المختلطة مع اختصارات سهلة والتاريخ.",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "النمو والمعالم",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "سجل الوزن والطول وتتبع المعالم والتسنين واللقاحات.",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "أصوات مريحة",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "شغل أصوات مهدئة وضوضاء بيضاء لمساعدة طفلك على النوم.",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "وصفات الأطفال",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "اكتشف وصفات صحية مصفاة حسب العمر مع المكونات والتعليمات.",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "تاريخ الأنشطة",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "اعرض جدولاً زمنياً واضحاً ليوم طفلك مع خيارات البحث والتصفية.",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "الوصول العائلي المشترك",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "تعاون مع مقدمي الرعاية وتبديل بسهولة بين عدة أطفال.",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "communityFluttergoo": "مجتمع FlutterGoo",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "صفحة GitHub",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "تعرف على مؤسس المجتمع",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

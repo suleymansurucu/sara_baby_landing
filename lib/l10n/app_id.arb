@@ -1,0 +1,497 @@
+{
+  "@@locale": "id",
+  "appTitle": "Sara Baby Tracker & Sounds",
+  "home": "Beranda",
+  "features": "Fitur",
+  "screens": "Layar",
+  "developer": "Pengembang",
+  "faq": "FAQ",
+  "getTheApp": "Dapatkan Aplikasi",
+  "getStartedToday": "Mulai Hari Ini",
+  "appStore": "App Store",
+  "googlePlay": "Google Play",
+  "perfectRating": "Rating Sempurna",
+  "parentsCount": "1000+ Orang Tua",
+  "noAds": "Tanpa Iklan",
+  "language": "Bahasa",
+  "selectLanguage": "Pilih Bahasa",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "Kesalahan memuat konten: {error}",
+  "retry": "Coba Lagi",
+  "download": "Unduh",
+  "cancel": "Batal",
+  "faqTitle": "❓ FAQ",
+  "faqSubtitle": "Pertanyaan yang Sering Diajukan",
+  "faqDescription": "Temukan jawaban untuk pertanyaan umum tentang Sara Baby Tracker.",
+  "developerTitle": "✨ Sara sepenuhnya open source",
+  "developerDescription": "Jelajahi kode, buka issues, dan berkontribusi untuk membuat Sara lebih baik.",
+  "developerCommunity": "Komunitas Flutter Goo Open Source",
+  "developerMission": "Membangun Solusi Modern untuk Orang Tua Baru",
+  "developerAbout": "Kami adalah komunitas open source yang bersemangat yang didedikasikan untuk menciptakan solusi modern, intuitif, dan dapat diakses untuk orang tua baru. Misi kami adalah membuat pengasuhan anak lebih mudah melalui teknologi inovatif, desain yang bersih, dan pengembangan yang digerakkan oleh komunitas. Bergabunglah dengan kami dalam membangun alat yang membantu keluarga melacak, memelihara, dan merayakan setiap momen berharga dari perjalanan bayi mereka.",
+  "viewGitHub": "Lihat GitHub",
+  "community": "Komunitas",
+  "email": "Email",
+  "screenshotsTitle": "📱 Screenshot",
+  "screenshotsSubtitle": "Lihat Sara dalam Aksi",
+  "screenshotsDescription": "Rasakan antarmuka kami yang dirancang dengan indah yang membuat pelacakan bayi menjadi sederhana dan intuitif.",
+  "swipe": "Geser",
+  "footerTitle": "Sara Baby Tracker & Sounds",
+  "footerDescription": "Teman terbaik untuk orang tua baru. Lacak aktivitas, pertumbuhan, dan pola tidur bayi Anda dengan mudah.",
+  "footerSubtitle": "Teman terbaik untuk orang tua baru",
+  "footerAbout": "Lacak aktivitas, pertumbuhan, dan pola tidur bayi Anda dengan mudah. Dibuat dengan cinta untuk orang tua yang menginginkan yang terbaik untuk anak-anak mereka.",
+  "downloadNow": "Unduh Sekarang",
+  "keyFeatures": "Fitur Utama",
+  "supportResources": "Dukungan & Sumber Daya",
+  "connectWithUs": "Hubungi Kami",
+  "copyright": "© {year} Sara Baby Tracker & Sounds — ",
+  "privacyPolicy": "Kebijakan Privasi",
+  "termsOfService": "Ketentuan Layanan",
+  "featuresTitle": "✨ Fitur",
+  "featuresSubtitle": "Solusi Perawatan Bayi Lengkap",
+  "featuresDescription": "Semua yang Anda butuhkan untuk melacak perkembangan bayi Anda dan menciptakan lingkungan yang mendukung.",
+  "termsOfServiceTitle": "Ketentuan Layanan",
+  "lastUpdated": "Terakhir Diperbarui: 17 September 2025",
+  "madeWithLove": "Dibuat dengan ❤️ oleh FlutterGoo",
+  "termsWelcome": "Selamat datang di Sara Baby Tracker & Sounds (\"Aplikasi\"). Ketentuan Layanan ini (\"Ketentuan\") mengatur penggunaan Anda terhadap aplikasi seluler kami dan layanan terkait. Dengan mengunduh, menginstal, atau menggunakan Aplikasi, Anda setuju untuk terikat dengan Ketentuan ini.",
+  "contactInformation": "10. Informasi Kontak",
+  "contactDescription": "Jika Anda memiliki pertanyaan tentang Ketentuan Layanan ini, silakan hubungi kami:",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "Kebijakan Privasi",
+  "privacyWelcome": "Sara Baby Tracker & Sounds (\"Aplikasi\") dikembangkan dan dipelihara oleh FlutterGoo, proyek komunitas open source. Kami berkomitmen untuk melindungi privasi Anda dan memastikan transparansi tentang bagaimana data Anda ditangani.",
+  "contactUs": "8. Hubungi Kami",
+  "privacyContactDescription": "Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini, Anda dapat menghubungi kami:",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "Dapatkan Aplikasi",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "Beranda",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "activityTracking": "Pelacakan Aktivitas",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "Antarmuka intuitif untuk mencatat semua aktivitas bayi",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "Timeline Riwayat",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "Tampilan timeline yang indah dari semua aktivitas yang tercatat",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "Resep Makanan Bayi",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "Resep yang sesuai usia dengan informasi nutrisi",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "Suara Menenangkan",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "Koleksi suara menenangkan yang dipilih untuk bayi",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 Mulai",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "Siap membuat pengasuhan lebih mudah?",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "Unduh Sara dan mulai melacak perkembangan bayi Anda hari ini. Bergabunglah dengan ribuan orang tua yang mempercayai Sara untuk perjalanan perawatan bayi mereka.",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "Unduh untuk iOS",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "Unduh untuk Android",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "Lacak Setiap Momen Berharga dengan Sara Baby",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "Teman perawatan bayi lengkap yang tumbuh bersama keluarga Anda. Lacak tidur, makan, pertumbuhan & lebih - 100% gratis, selamanya.",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "Apa itu Sara Baby Tracker?",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "Sara adalah aplikasi pelacakan bayi yang komprehensif yang membantu orang tua dan pengasuh memantau makan, tidur, ganti popok, tonggak pertumbuhan, dan lebih banyak lagi. Ini juga termasuk suara menenangkan dan resep makanan bayi.",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "Apakah Sara gratis?",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "Ya! Sara sepenuhnya gratis dan open source. Anda dapat mengunduhnya dari App Store atau Google Play Store tanpa biaya.",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "Bagaimana data saya dilindungi?",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "Sara dirancang dengan privasi dalam pikiran. Semua data disimpan secara lokal di perangkat Anda dan tidak dibagikan dengan pihak ketiga. Anda memiliki kontrol penuh atas informasi Anda.",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "Bisakah saya melacak beberapa bayi?",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "Ya! Sara mendukung pelacakan beberapa bayi dan memungkinkan Anda beralih dengan mudah di antara mereka. Sempurna untuk keluarga dengan kembar atau beberapa anak.",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "Apakah Sara bekerja offline?",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "Tentu saja! Sara bekerja sepenuhnya offline. Semua data Anda disimpan secara lokal di perangkat Anda, jadi Anda dapat menggunakannya di mana saja tanpa koneksi internet.",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "Bisakah saya mencadangkan data saya?",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "Ya, Sara menyediakan opsi untuk mencadangkan dan memulihkan data Anda. Anda dapat mengekspor data Anda dan mengimpornya di perangkat lain atau memulihkannya jika diperlukan.",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "Pelacak Makan",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "Lacak setiap sesi makan dengan mudah - menyusui, botol, dan memompa.",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "Pelacak Tidur",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "Pantau tidur dengan timer yang tepat dan white noise bawaan untuk membantu bayi Anda tidur.",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "Log Popok",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "Catat dengan cepat popok basah, kotor, atau campuran dengan pintasan mudah dan riwayat.",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "Pertumbuhan & Tonggak",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "Catat berat badan, tinggi badan dan lacak tonggak, tumbuh gigi, dan vaksinasi.",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "Suara Menenangkan",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "Putar suara menenangkan dan white noise untuk membantu bayi Anda tertidur.",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "Resep Bayi",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "Temukan resep sehat yang difilter berdasarkan usia dengan bahan dan instruksi.",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "Riwayat Aktivitas",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "Lihat timeline yang jelas dari hari bayi Anda dengan opsi pencarian dan filter.",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "Akses Keluarga Bersama",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "Berkolaborasi dengan pengasuh dan beralih dengan mudah di antara beberapa bayi.",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "communityFluttergoo": "Komunitas FlutterGoo",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "Halaman GitHub",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "Temui Pendiri Komunitas",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

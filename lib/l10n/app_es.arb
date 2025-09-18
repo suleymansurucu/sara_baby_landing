@@ -1,0 +1,497 @@
+{
+  "@@locale": "es",
+  "appTitle": "Sara Baby Tracker & Sounds",
+  "home": "Inicio",
+  "features": "Características",
+  "screens": "Pantallas",
+  "developer": "Desarrollador",
+  "faq": "Preguntas Frecuentes",
+  "getTheApp": "Obtener la App",
+  "getStartedToday": "Comienza Hoy",
+  "appStore": "App Store",
+  "googlePlay": "Google Play",
+  "perfectRating": "Calificación Perfecta",
+  "parentsCount": "1000+ Padres",
+  "noAds": "Sin Anuncios",
+  "language": "Idioma",
+  "selectLanguage": "Seleccionar Idioma",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "Error al cargar contenido: {error}",
+  "retry": "Reintentar",
+  "download": "Descargar",
+  "cancel": "Cancelar",
+  "faqTitle": "❓ Preguntas Frecuentes",
+  "faqSubtitle": "Preguntas Frecuentes",
+  "faqDescription": "Encuentra respuestas a preguntas comunes sobre Sara Baby Tracker.",
+  "developerTitle": "✨ Sara es completamente de código abierto",
+  "developerDescription": "Explora el código, abre issues y contribuye a hacer Sara aún mejor.",
+  "developerCommunity": "Comunidad Flutter Goo de Código Abierto",
+  "developerMission": "Construyendo Soluciones Modernas para Nuevos Padres",
+  "developerAbout": "Somos una comunidad apasionada de código abierto dedicada a crear soluciones modernas, intuitivas y accesibles para nuevos padres. Nuestra misión es hacer la crianza más fácil a través de tecnología innovadora, diseño limpio y desarrollo impulsado por la comunidad. Únete a nosotros en la construcción de herramientas que ayuden a las familias a rastrear, nutrir y celebrar cada momento precioso del viaje de su bebé.",
+  "viewGitHub": "Ver GitHub",
+  "community": "Comunidad",
+  "email": "Correo",
+  "screenshotsTitle": "📱 Capturas de Pantalla",
+  "screenshotsSubtitle": "Ve a Sara en Acción",
+  "screenshotsDescription": "Experimenta nuestra interfaz bellamente diseñada que hace que el seguimiento del bebé sea simple e intuitivo.",
+  "swipe": "Deslizar",
+  "footerTitle": "Sara Baby Tracker & Sounds",
+  "footerDescription": "El compañero definitivo para nuevos padres. Rastrea las actividades, crecimiento y patrones de sueño de tu bebé con facilidad.",
+  "footerSubtitle": "El compañero definitivo para nuevos padres",
+  "footerAbout": "Rastrea las actividades, crecimiento y patrones de sueño de tu bebé con facilidad. Construido con amor para padres que quieren lo mejor para sus pequeños.",
+  "downloadNow": "Descargar Ahora",
+  "keyFeatures": "Características Clave",
+  "supportResources": "Soporte y Recursos",
+  "connectWithUs": "Conéctate con Nosotros",
+  "copyright": "© {year} Sara Baby Tracker & Sounds — ",
+  "privacyPolicy": "Política de Privacidad",
+  "termsOfService": "Términos de Servicio",
+  "featuresTitle": "✨ Características",
+  "featuresSubtitle": "Solución Completa de Cuidado del Bebé",
+  "featuresDescription": "Todo lo que necesitas para rastrear el desarrollo de tu bebé y crear un ambiente nutritivo.",
+  "termsOfServiceTitle": "Términos de Servicio",
+  "lastUpdated": "Última Actualización: 17 de septiembre de 2025",
+  "madeWithLove": "Hecho con ❤️ por FlutterGoo",
+  "termsWelcome": "Bienvenido a Sara Baby Tracker & Sounds (\"la App\"). Estos Términos de Servicio (\"Términos\") rigen tu uso de nuestra aplicación móvil y servicios relacionados. Al descargar, instalar o usar la App, aceptas estar sujeto a estos Términos.",
+  "contactInformation": "10. Información de Contacto",
+  "contactDescription": "Si tienes alguna pregunta sobre estos Términos de Servicio, por favor contáctanos:",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "Política de Privacidad",
+  "privacyWelcome": "Sara Baby Tracker & Sounds (\"la App\") es desarrollada y mantenida por FlutterGoo, un proyecto comunitario de código abierto. Estamos comprometidos a proteger tu privacidad y asegurar transparencia sobre cómo se manejan tus datos.",
+  "contactUs": "8. Contáctanos",
+  "privacyContactDescription": "Si tienes alguna pregunta o inquietud sobre esta Política de Privacidad, puedes contactarnos:",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "Obtener la App",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "Inicio",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "activityTracking": "Seguimiento de Actividades",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "Interfaz intuitiva para registrar todas las actividades del bebé",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "Línea de Tiempo del Historial",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "Vista hermosa de línea de tiempo de todas las actividades registradas",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "Recetas de Comida para Bebés",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "Recetas apropiadas para la edad con información nutricional",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "Sonidos Relajantes",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "Colección curada de sonidos relajantes para el bebé",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 Comenzar",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "¿Listo para hacer la crianza más fácil?",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "Descarga Sara y comienza a rastrear el desarrollo de tu bebé hoy. Únete a miles de padres que confían en Sara para su viaje de cuidado del bebé.",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "Descargar para iOS",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "Descargar para Android",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "Rastrea Cada Momento Precioso con Sara Baby",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "El compañero completo de cuidado del bebé que crece con tu familia. Rastrea el sueño, alimentación, crecimiento y más - 100% gratis, para siempre.",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "¿Qué es Sara Baby Tracker?",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "Sara es una aplicación integral de seguimiento de bebés que ayuda a padres y cuidadores a monitorear la alimentación, sueño, cambios de pañal, hitos de crecimiento y más. También incluye sonidos relajantes y recetas de comida para bebés.",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "¿Es Sara gratis?",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "¡Sí! Sara es completamente gratis y de código abierto. Puedes descargarlo del App Store o Google Play Store sin costo alguno.",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "¿Cómo se protegen mis datos?",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "Sara está diseñado con la privacidad en mente. Todos los datos se almacenan localmente en tu dispositivo y no se comparten con terceros. Tienes control completo sobre tu información.",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "¿Puedo rastrear múltiples bebés?",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "¡Sí! Sara soporta el seguimiento de múltiples bebés y te permite cambiar fácilmente entre ellos. Perfecto para familias con gemelos o múltiples hijos.",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "¿Funciona Sara sin conexión?",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "¡Absolutamente! Sara funciona completamente sin conexión. Todos tus datos se almacenan localmente en tu dispositivo, por lo que puedes usarlo en cualquier lugar sin conexión a internet.",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "¿Puedo respaldar mis datos?",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "Sí, Sara proporciona opciones para respaldar y restaurar tus datos. Puedes exportar tus datos e importarlos en otros dispositivos o restaurarlos si es necesario.",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "Rastreador de Alimentación",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "Rastrea cada sesión de alimentación con facilidad: lactancia materna, alimentación con biberón y extracción.",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "Rastreador de Sueño",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "Monitorea el sueño con temporizadores precisos y ruido blanco incorporado para ayudar a tu bebé a dormir.",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "Registro de Pañales",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "Registra rápidamente pañales mojados, sucios o mixtos con accesos directos fáciles e historial.",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "Crecimiento e Hitos",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "Registra peso, altura y rastrea hitos, dentición y vacunaciones.",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "Sonidos Relajantes",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "Reproduce sonidos relajantes y ruido blanco para ayudar a tu bebé a dormirse.",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "Recetas para Bebés",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "Descubre recetas saludables filtradas por edad con ingredientes e instrucciones.",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "Historial de Actividades",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "Ve una línea de tiempo clara del día de tu bebé con opciones de búsqueda y filtrado.",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "Acceso Familiar Compartido",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "Colabora con cuidadores y cambia fácilmente entre múltiples bebés.",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "communityFluttergoo": "Comunidad FlutterGoo",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "Página de GitHub",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "Conoce al Fundador de la Comunidad",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}

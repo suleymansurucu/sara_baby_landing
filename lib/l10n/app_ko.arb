@@ -1,0 +1,497 @@
+{
+  "@@locale": "ko",
+  "appTitle": "사라 베이비 트래커 & 사운드",
+  "home": "홈",
+  "features": "기능",
+  "screens": "화면",
+  "developer": "개발자",
+  "faq": "자주 묻는 질문",
+  "getTheApp": "앱 다운로드",
+  "getStartedToday": "오늘 시작하세요",
+  "appStore": "앱 스토어",
+  "googlePlay": "구글 플레이",
+  "perfectRating": "완벽한 평점",
+  "parentsCount": "1000+ 부모",
+  "noAds": "광고 없음",
+  "language": "언어",
+  "selectLanguage": "언어 선택",
+  "english": "English",
+  "turkish": "Türkçe",
+  "german": "Deutsch",
+  "spanish": "Español",
+  "french": "Français",
+  "arabic": "العربية",
+  "chinese": "中文",
+  "dutch": "Nederlands",
+  "russian": "Русский",
+  "korean": "한국어",
+  "indonesian": "Bahasa Indonesia",
+  "errorLoadingContent": "콘텐츠 로딩 오류: {error}",
+  "retry": "다시 시도",
+  "download": "다운로드",
+  "cancel": "취소",
+  "faqTitle": "❓ 자주 묻는 질문",
+  "faqSubtitle": "자주 묻는 질문",
+  "faqDescription": "사라 베이비 트래커에 대한 일반적인 질문에 대한 답변을 찾아보세요.",
+  "developerTitle": "✨ 사라는 완전히 오픈 소스입니다",
+  "developerDescription": "코드를 탐색하고, 이슈를 열고, 사라를 더 좋게 만드는 데 기여하세요.",
+  "developerCommunity": "Flutter Goo 오픈 소스 커뮤니티",
+  "developerMission": "새로운 부모를 위한 현대적인 솔루션 구축",
+  "developerAbout": "우리는 새로운 부모를 위한 현대적이고 직관적이며 접근 가능한 솔루션을 만드는 데 전념하는 열정적인 오픈 소스 커뮤니티입니다. 우리의 미션은 혁신적인 기술, 깔끔한 디자인, 커뮤니티 주도 개발을 통해 육아를 더 쉽게 만드는 것입니다. 가족들이 아기의 여정의 모든 소중한 순간을 추적하고, 양육하고, 축하하는 데 도움이 되는 도구를 구축하는 데 참여하세요.",
+  "viewGitHub": "GitHub 보기",
+  "community": "커뮤니티",
+  "email": "이메일",
+  "screenshotsTitle": "📱 스크린샷",
+  "screenshotsSubtitle": "사라의 실제 모습 보기",
+  "screenshotsDescription": "아기 추적을 간단하고 직관적으로 만드는 아름답게 디자인된 인터페이스를 경험해보세요.",
+  "swipe": "스와이프",
+  "footerTitle": "사라 베이비 트래커 & 사운드",
+  "footerDescription": "새로운 부모를 위한 궁극의 동반자. 아기의 활동, 성장, 수면 패턴을 쉽게 추적하세요.",
+  "footerSubtitle": "새로운 부모를 위한 궁극의 동반자",
+  "footerAbout": "아기의 활동, 성장, 수면 패턴을 쉽게 추적하세요. 작은 아이들에게 최고를 원하는 부모들을 위해 사랑으로 만들어졌습니다.",
+  "downloadNow": "지금 다운로드",
+  "keyFeatures": "주요 기능",
+  "supportResources": "지원 및 리소스",
+  "connectWithUs": "문의하기",
+  "copyright": "© {year} 사라 베이비 트래커 & 사운드 — ",
+  "privacyPolicy": "개인정보 보호정책",
+  "termsOfService": "서비스 약관",
+  "featuresTitle": "✨ 기능",
+  "featuresSubtitle": "완전한 아기 돌봄 솔루션",
+  "featuresDescription": "아기의 발달을 추적하고 양육 환경을 조성하는 데 필요한 모든 것.",
+  "termsOfServiceTitle": "서비스 약관",
+  "lastUpdated": "마지막 업데이트: 2025년 9월 17일",
+  "madeWithLove": "FlutterGoo가 ❤️로 제작",
+  "termsWelcome": "사라 베이비 트래커 & 사운드(\"앱\")에 오신 것을 환영합니다. 이 서비스 약관(\"약관\")은 저희 모바일 애플리케이션 및 관련 서비스 사용을 규정합니다. 앱을 다운로드, 설치 또는 사용함으로써 이 약관에 구속되는 것에 동의합니다.",
+  "contactInformation": "10. 연락처 정보",
+  "contactDescription": "이 서비스 약관에 대해 질문이 있으시면 저희에게 연락해 주세요:",
+  "contactEmail": "suleymansurucu95@gmail.com",
+  "privacyPolicyTitle": "개인정보 보호정책",
+  "privacyWelcome": "사라 베이비 트래커 & 사운드(\"앱\")는 오픈 소스 커뮤니티 프로젝트인 FlutterGoo에서 개발하고 유지보수합니다. 저희는 귀하의 개인정보를 보호하고 데이터 처리 방식에 대한 투명성을 보장하기 위해 최선을 다하고 있습니다.",
+  "contactUs": "8. 문의하기",
+  "privacyContactDescription": "이 개인정보 보호정책에 대해 질문이나 우려사항이 있으시면 저희에게 연락하실 수 있습니다:",
+  "privacyContactEmail": "fluttergoo@gmail.com",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "@home": {
+    "description": "Home navigation item"
+  },
+  "@features": {
+    "description": "Features navigation item"
+  },
+  "@screens": {
+    "description": "Screens navigation item"
+  },
+  "@developer": {
+    "description": "Developer navigation item"
+  },
+  "@faq": {
+    "description": "FAQ navigation item"
+  },
+  "@getTheApp": {
+    "description": "Get the app button text"
+  },
+  "@getStartedToday": {
+    "description": "Get started today text"
+  },
+  "@appStore": {
+    "description": "App Store button text"
+  },
+  "@googlePlay": {
+    "description": "Google Play button text"
+  },
+  "@perfectRating": {
+    "description": "Perfect rating text"
+  },
+  "@parentsCount": {
+    "description": "Number of parents using the app"
+  },
+  "@noAds": {
+    "description": "No ads feature text"
+  },
+  "@language": {
+    "description": "Language selector label"
+  },
+  "@selectLanguage": {
+    "description": "Language selection dialog title"
+  },
+  "@english": {
+    "description": "English language option"
+  },
+  "@turkish": {
+    "description": "Turkish language option"
+  },
+  "@german": {
+    "description": "German language option"
+  },
+  "@spanish": {
+    "description": "Spanish language option"
+  },
+  "@french": {
+    "description": "French language option"
+  },
+  "@arabic": {
+    "description": "Arabic language option"
+  },
+  "@chinese": {
+    "description": "Chinese language option"
+  },
+  "@dutch": {
+    "description": "Dutch language option"
+  },
+  "@russian": {
+    "description": "Russian language option"
+  },
+  "@korean": {
+    "description": "Korean language option"
+  },
+  "@indonesian": {
+    "description": "Indonesian language option"
+  },
+  "@errorLoadingContent": {
+    "description": "Error message when content fails to load",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@faqTitle": {
+    "description": "FAQ section title"
+  },
+  "@faqSubtitle": {
+    "description": "FAQ section subtitle"
+  },
+  "@faqDescription": {
+    "description": "FAQ section description"
+  },
+  "@developerTitle": {
+    "description": "Developer section title"
+  },
+  "@developerDescription": {
+    "description": "Developer section description"
+  },
+  "@developerCommunity": {
+    "description": "Developer community name"
+  },
+  "@developerMission": {
+    "description": "Developer mission statement"
+  },
+  "@developerAbout": {
+    "description": "Developer about text"
+  },
+  "@viewGitHub": {
+    "description": "View GitHub button text"
+  },
+  "@community": {
+    "description": "Community button text"
+  },
+  "@email": {
+    "description": "Email button text"
+  },
+  "@screenshotsTitle": {
+    "description": "Screenshots section title"
+  },
+  "@screenshotsSubtitle": {
+    "description": "Screenshots section subtitle"
+  },
+  "@screenshotsDescription": {
+    "description": "Screenshots section description"
+  },
+  "@swipe": {
+    "description": "Swipe instruction text"
+  },
+  "@footerTitle": {
+    "description": "Footer title"
+  },
+  "@footerDescription": {
+    "description": "Footer description"
+  },
+  "@footerSubtitle": {
+    "description": "Footer subtitle"
+  },
+  "@footerAbout": {
+    "description": "Footer about text"
+  },
+  "@downloadNow": {
+    "description": "Download now button text"
+  },
+  "@keyFeatures": {
+    "description": "Key features section title"
+  },
+  "@supportResources": {
+    "description": "Support and resources section title"
+  },
+  "@connectWithUs": {
+    "description": "Connect with us section title"
+  },
+  "@copyright": {
+    "description": "Copyright text",
+    "placeholders": {
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "@privacyPolicy": {
+    "description": "Privacy Policy link text"
+  },
+  "@termsOfService": {
+    "description": "Terms of Service link text"
+  },
+  "@featuresTitle": {
+    "description": "Features section title"
+  },
+  "@featuresSubtitle": {
+    "description": "Features section subtitle"
+  },
+  "@featuresDescription": {
+    "description": "Features section description"
+  },
+  "@termsOfServiceTitle": {
+    "description": "Terms of Service page title"
+  },
+  "@lastUpdated": {
+    "description": "Last updated date"
+  },
+  "@madeWithLove": {
+    "description": "Made with love text"
+  },
+  "@termsWelcome": {
+    "description": "Terms of Service welcome text"
+  },
+  "@contactInformation": {
+    "description": "Contact information section title"
+  },
+  "@contactDescription": {
+    "description": "Contact description text"
+  },
+  "@contactEmail": {
+    "description": "Contact email address"
+  },
+  "@privacyPolicyTitle": {
+    "description": "Privacy Policy page title"
+  },
+  "@privacyWelcome": {
+    "description": "Privacy Policy welcome text"
+  },
+  "@contactUs": {
+    "description": "Contact us section title"
+  },
+  "@privacyContactDescription": {
+    "description": "Privacy Policy contact description"
+  },
+  "@privacyContactEmail": {
+    "description": "Privacy Policy contact email"
+  },
+  "appTitleHeader": "Sara Baby Tracker & Sounds",
+  "@appTitleHeader": {
+    "description": "App title shown in header"
+  },
+  "getTheAppButton": "앱 다운로드",
+  "@getTheAppButton": {
+    "description": "Get the app button text in header and drawer"
+  },
+  "homeNavigation": "홈",
+  "@homeNavigation": {
+    "description": "Home navigation text"
+  },
+  "activityTracking": "활동 추적",
+  "@activityTracking": {
+    "description": "Activity tracking feature title"
+  },
+  "activityTrackingDescription": "모든 아기 활동을 기록하는 직관적인 인터페이스",
+  "@activityTrackingDescription": {
+    "description": "Activity tracking feature description"
+  },
+  "historyTimeline": "히스토리 타임라인",
+  "@historyTimeline": {
+    "description": "History timeline feature title"
+  },
+  "historyTimelineDescription": "기록된 모든 활동의 아름다운 타임라인 뷰",
+  "@historyTimelineDescription": {
+    "description": "History timeline feature description"
+  },
+  "babyFoodRecipes": "아기 음식 레시피",
+  "@babyFoodRecipes": {
+    "description": "Baby food recipes feature title"
+  },
+  "babyFoodRecipesDescription": "영양 정보가 포함된 연령에 적합한 레시피",
+  "@babyFoodRecipesDescription": {
+    "description": "Baby food recipes feature description"
+  },
+  "relaxingSounds": "편안한 소리",
+  "@relaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "relaxingSoundsDescription": "아기를 위한 차분한 소리의 큐레이션 컬렉션",
+  "@relaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "getStarted": "🚀 시작하기",
+  "@getStarted": {
+    "description": "Get started section badge"
+  },
+  "readyToMakeParentingEasier": "육아를 더 쉽게 만들 준비가 되셨나요?",
+  "@readyToMakeParentingEasier": {
+    "description": "CTA section main heading"
+  },
+  "downloadSaraDescription": "사라를 다운로드하고 오늘부터 아기의 발달을 추적해보세요. 아기 돌봄 여정에 사라를 신뢰하는 수천 명의 부모들과 함께하세요.",
+  "@downloadSaraDescription": {
+    "description": "CTA section description"
+  },
+  "downloadForIOS": "iOS용 다운로드",
+  "@downloadForIOS": {
+    "description": "iOS download subtitle"
+  },
+  "downloadForAndroid": "Android용 다운로드",
+  "@downloadForAndroid": {
+    "description": "Android download subtitle"
+  },
+  "appName": "사라 베이비와 함께 모든 소중한 순간을 추적하세요",
+  "@appName": {
+    "description": "App name/title"
+  },
+  "appTagline": "가족과 함께 성장하는 완전한 아기 돌봄 동반자. 수면, 먹이기, 성장 등을 추적하세요 - 100% 무료, 영원히.",
+  "@appTagline": {
+    "description": "App tagline/description"
+  },
+  "faqWhatIsSara": "사라 베이비 트래커란 무엇인가요?",
+  "@faqWhatIsSara": {
+    "description": "FAQ question about what Sara is"
+  },
+  "faqWhatIsSaraAnswer": "사라는 부모와 돌봄이들이 먹이기, 수면, 기저귀 교체, 성장 이정표 등을 모니터링하는 데 도움이 되는 포괄적인 아기 추적 앱입니다. 또한 편안한 소리와 아기 음식 레시피도 포함되어 있습니다.",
+  "@faqWhatIsSaraAnswer": {
+    "description": "FAQ answer about what Sara is"
+  },
+  "faqIsFree": "사라는 무료인가요?",
+  "@faqIsFree": {
+    "description": "FAQ question about free usage"
+  },
+  "faqIsFreeAnswer": "네! 사라는 완전히 무료이고 오픈 소스입니다. App Store나 Google Play Store에서 비용 없이 다운로드할 수 있습니다.",
+  "@faqIsFreeAnswer": {
+    "description": "FAQ answer about free usage"
+  },
+  "faqPrivacyData": "내 데이터는 어떻게 보호되나요?",
+  "@faqPrivacyData": {
+    "description": "FAQ question about data privacy"
+  },
+  "faqPrivacyDataAnswer": "사라는 개인정보 보호를 염두에 두고 설계되었습니다. 모든 데이터는 기기에 로컬로 저장되며 제3자와 공유되지 않습니다. 귀하는 정보에 대한 완전한 통제권을 가집니다.",
+  "@faqPrivacyDataAnswer": {
+    "description": "FAQ answer about data privacy"
+  },
+  "faqMultipleBabies": "여러 아기를 추적할 수 있나요?",
+  "@faqMultipleBabies": {
+    "description": "FAQ question about multiple babies"
+  },
+  "faqMultipleBabiesAnswer": "네! 사라는 여러 아기 추적을 지원하며 쉽게 전환할 수 있습니다. 쌍둥이나 여러 자녀가 있는 가족에게 완벽합니다.",
+  "@faqMultipleBabiesAnswer": {
+    "description": "FAQ answer about multiple babies"
+  },
+  "faqOfflineUse": "사라는 오프라인에서 작동하나요?",
+  "@faqOfflineUse": {
+    "description": "FAQ question about offline usage"
+  },
+  "faqOfflineUseAnswer": "물론입니다! 사라는 완전히 오프라인에서 작동합니다. 모든 데이터가 기기에 로컬로 저장되므로 인터넷 연결 없이 어디서나 사용할 수 있습니다.",
+  "@faqOfflineUseAnswer": {
+    "description": "FAQ answer about offline usage"
+  },
+  "faqBackupData": "데이터를 백업할 수 있나요?",
+  "@faqBackupData": {
+    "description": "FAQ question about data backup"
+  },
+  "faqBackupDataAnswer": "네, 사라는 데이터를 백업하고 복원하는 옵션을 제공합니다. 데이터를 내보내고 다른 기기에 가져오거나 필요시 복원할 수 있습니다.",
+  "@faqBackupDataAnswer": {
+    "description": "FAQ answer about data backup"
+  },
+  "featureFeedingTracker": "먹이기 추적기",
+  "@featureFeedingTracker": {
+    "description": "Feeding tracker feature title"
+  },
+  "featureFeedingTrackerDescription": "모든 먹이기 세션을 쉽게 추적하세요 - 모유 수유, 병 수유, 유축.",
+  "@featureFeedingTrackerDescription": {
+    "description": "Feeding tracker feature description"
+  },
+  "featureSleepTracker": "수면 추적기",
+  "@featureSleepTracker": {
+    "description": "Sleep tracker feature title"
+  },
+  "featureSleepTrackerDescription": "정확한 타이머와 내장된 화이트 노이즈로 수면을 모니터링하여 아기가 잠들 수 있도록 도와주세요.",
+  "@featureSleepTrackerDescription": {
+    "description": "Sleep tracker feature description"
+  },
+  "featureDiaperLog": "기저귀 로그",
+  "@featureDiaperLog": {
+    "description": "Diaper log feature title"
+  },
+  "featureDiaperLogDescription": "쉬운 단축키와 히스토리로 젖은, 더러운, 혼합 기저귀를 빠르게 기록하세요.",
+  "@featureDiaperLogDescription": {
+    "description": "Diaper log feature description"
+  },
+  "featureGrowthMilestones": "성장 & 이정표",
+  "@featureGrowthMilestones": {
+    "description": "Growth milestones feature title"
+  },
+  "featureGrowthMilestonesDescription": "체중, 키를 기록하고 이정표, 치아 발육, 예방접종을 추적하세요.",
+  "@featureGrowthMilestonesDescription": {
+    "description": "Growth milestones feature description"
+  },
+  "featureRelaxingSounds": "편안한 소리",
+  "@featureRelaxingSounds": {
+    "description": "Relaxing sounds feature title"
+  },
+  "featureRelaxingSoundsDescription": "아기가 잠들 수 있도록 편안한 소리와 화이트 노이즈를 재생하세요.",
+  "@featureRelaxingSoundsDescription": {
+    "description": "Relaxing sounds feature description"
+  },
+  "featureBabyRecipes": "아기 레시피",
+  "@featureBabyRecipes": {
+    "description": "Baby recipes feature title"
+  },
+  "featureBabyRecipesDescription": "재료와 지침이 포함된 연령별 필터링된 건강한 레시피를 발견하세요.",
+  "@featureBabyRecipesDescription": {
+    "description": "Baby recipes feature description"
+  },
+  "featureActivityHistory": "활동 히스토리",
+  "@featureActivityHistory": {
+    "description": "Activity history feature title"
+  },
+  "featureActivityHistoryDescription": "검색 및 필터 옵션과 함께 아기의 하루의 명확한 타임라인을 보세요.",
+  "@featureActivityHistoryDescription": {
+    "description": "Activity history feature description"
+  },
+  "featureSharedFamilyAccess": "공유 가족 액세스",
+  "@featureSharedFamilyAccess": {
+    "description": "Shared family access feature title"
+  },
+  "featureSharedFamilyAccessDescription": "돌봄이들과 협력하고 여러 아기 간에 쉽게 전환하세요.",
+  "@featureSharedFamilyAccessDescription": {
+    "description": "Shared family access feature description"
+  },
+  "communityFluttergoo": "FlutterGoo 커뮤니티",
+  "@communityFluttergoo": {
+    "description": "Community FlutterGoo link text"
+  },
+  "githubPage": "GitHub 페이지",
+  "@githubPage": {
+    "description": "GitHub page link text"
+  },
+  "meetCommunityFounder": "커뮤니티 창립자 만나기",
+  "@meetCommunityFounder": {
+    "description": "Meet community founder section title"
+  },
+  "linkedin": "LinkedIn",
+  "@linkedin": {
+    "description": "LinkedIn link text"
+  }
+}
