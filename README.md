@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Sara Baby Logo](assets/logos/sara_baby_logo.png)
+<img src="assets/logos/sara_baby_logo.png" alt="Sara Baby Logo" width="80" height="80">
 
 **A beautiful, responsive landing page for the Sara Baby Tracker & Sounds mobile app**
 
