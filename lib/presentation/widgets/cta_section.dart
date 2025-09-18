@@ -159,7 +159,7 @@ class CTASection extends StatelessWidget {
           context: context,
           title: 'App Store',
           subtitle: 'Download for iOS',
-          icon: Icons.apple,
+          imagePath: 'assets/logos/appstore_badge.png',
           onPressed: () => launchUrl(Uri.parse('https://apps.apple.com/us/app/sara-baby-tracker-sounds/id6746516938')),
           isPrimary: false,
           isMobile: isMobile,
@@ -168,7 +168,7 @@ class CTASection extends StatelessWidget {
           context: context,
           title: 'Google Play',
           subtitle: 'Download for Android',
-          icon: Icons.android,
+          imagePath: 'assets/logos/googleplay_badge.png',
           onPressed: () => launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.suleymansurucu.sarababy')),
           isPrimary: true,
           isMobile: isMobile,
@@ -181,7 +181,7 @@ class CTASection extends StatelessWidget {
     required BuildContext context,
     required String title,
     required String subtitle,
-    required IconData icon,
+    required String imagePath,
     required VoidCallback onPressed,
     required bool isPrimary,
     required bool isMobile,
@@ -231,12 +231,11 @@ class CTASection extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              icon,
-              color: isPrimary
-                  ? Colors.white
-                  : Theme.of(context).colorScheme.onSurface,
-              size: isMobile ? 20 : 22,
+            Image.asset(
+              imagePath,
+              height: isMobile ? 24 : 28,
+              width: isMobile ? 24 : 28,
+              fit: BoxFit.contain,
             ),
             SizedBox(width: isMobile ? 8 : 12),
             Column(
