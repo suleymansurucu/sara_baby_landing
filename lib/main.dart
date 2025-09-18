@@ -11,6 +11,8 @@ import 'services/deep_link_service.dart';
 import 'services/language_change_notifier.dart';
 import 'generated/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'presentation/pages/landing_page.dart';
 import 'presentation/pages/privacy_policy_page.dart';
 import 'presentation/pages/terms_of_service_page.dart';
@@ -18,6 +20,11 @@ import 'presentation/pages/terms_of_service_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Use path URL strategy instead of hash
+  if (kIsWeb) {
+    usePathUrlStrategy();
+  }
   
   // Initialize deep link service for web
   DeepLinkService.initialize();
