@@ -90,8 +90,8 @@ class FeaturesSection extends StatelessWidget {
   }
 
   double _getAspectRatio(double width) {
-    if (width < 480) return 1.6;
-    if (width < 640) return 1.0;
+    if (width < 480) return 2.2;
+    if (width < 640) return 1.3;
     if (width < 900) return 1.1;
     if (width < 1200) return 1.0;
     return 1.0;
@@ -122,7 +122,7 @@ class FeaturesSection extends StatelessWidget {
         ),
         color: Theme.of(context).colorScheme.surface,
         child: Padding(
-          padding: EdgeInsets.all(isVerySmallMobile ? 12 : (isMobile ? 14 : 20)),
+          padding: EdgeInsets.all(isVerySmallMobile ? 10 : (isMobile ? 12 : 20)),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -142,7 +142,7 @@ class FeaturesSection extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: isVerySmallMobile ? 8 : (isMobile ? 10 : 16)),
+              SizedBox(height: isVerySmallMobile ? 6 : (isMobile ? 8 : 16)),
               Text(
                 feature.title,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -153,7 +153,7 @@ class FeaturesSection extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.visible,
               ),
-              SizedBox(height: isVerySmallMobile ? 4 : (isMobile ? 5 : 8)),
+              SizedBox(height: isVerySmallMobile ? 3 : (isMobile ? 4 : 8)),
               Text(
                 feature.description,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
