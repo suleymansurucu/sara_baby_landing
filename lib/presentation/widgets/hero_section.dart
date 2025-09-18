@@ -13,7 +13,10 @@ class HeroSection extends StatelessWidget {
     final isMobile = isPhone(context);
 
     return Container(
-      padding: EdgeInsets.symmetric(vertical: isMobile ? 40 : 80),
+      padding: EdgeInsets.symmetric(
+        vertical: isMobile ? 48 : 80,
+        horizontal: isMobile ? 0 : 0,
+      ),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -25,9 +28,14 @@ class HeroSection extends StatelessWidget {
         ),
       ),
       child: MaxWidth(
-        child: isMobile
-            ? _buildMobileLayout(context)
-            : _buildDesktopLayout(context),
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: isMobile ? 20 : 0,
+          ),
+          child: isMobile
+              ? _buildMobileLayout(context)
+              : _buildDesktopLayout(context),
+        ),
       ),
     );
   }
@@ -43,64 +51,41 @@ class HeroSection extends StatelessWidget {
           style: Theme.of(context).textTheme.displaySmall?.copyWith(
             color: Colors.white,
             height: 1.1,
-            fontWeight: FontWeight.w800,
+            fontWeight: FontWeight.w900,
+            fontSize: 32,
+            letterSpacing: -0.5,
           ),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 24),
         Container(
           width: 80,
-          height: 1,
+          height: 2,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withOpacity(0.3),
             borderRadius: BorderRadius.circular(1),
           ),
         ),
-        const SizedBox(height: 20),
-        Text(
-          appInfo.tagline,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            color: Colors.white.withOpacity(0.95),
-            height: 1.4,
-          ),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 16),
-        Container(
-          width: 100,
-          height: 1,
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.15),
-            borderRadius: BorderRadius.circular(1),
-          ),
-        ),
-        const SizedBox(height: 16),
-        Text(
-          appInfo.description,
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-            color: Colors.white.withOpacity(0.9),
-            height: 1.5,
-          ),
-          textAlign: TextAlign.center,
-        ),
-        const SizedBox(height: 32),
-        _buildCTAs(context),
         const SizedBox(height: 24),
-        if (appInfo.isOpenSource)
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(20),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            appInfo.tagline,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+              color: Colors.white.withOpacity(0.95),
+              height: 1.5,
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+              letterSpacing: 0.2,
             ),
-            child: Text(
-              '✨ Fully Open Source',
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
+            textAlign: TextAlign.center,
           ),
+        ),
+        const SizedBox(height: 40),
+        _buildCTAs(context),
+        const SizedBox(height: 32),
+        _buildTrustIndicators(context),
+        const SizedBox(height: 20),
       ],
     );
   }
@@ -119,65 +104,43 @@ class HeroSection extends StatelessWidget {
                 style: Theme.of(context).textTheme.displayMedium?.copyWith(
                   color: Colors.white,
                   height: 1.1,
-                  fontWeight: FontWeight.w800,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 48,
+                  letterSpacing: -1.0,
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 24),
               Container(
                 width: 100,
-                height: 1,
+                height: 2,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(1),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 24),
               Text(
                 appInfo.tagline,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Colors.white.withOpacity(0.95),
-                  height: 1.4,
-                ),
-              ),
-              const SizedBox(height: 16),
-              Container(
-                width: 120,
-                height: 1,
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.15),
-                  borderRadius: BorderRadius.circular(1),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                appInfo.description,
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: Colors.white.withOpacity(0.9),
                   height: 1.5,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 0.2,
                 ),
+              ),
+              const SizedBox(height: 40),
+              Center(
+                child: _buildCTAs(context),
               ),
               const SizedBox(height: 32),
-              _buildCTAs(context),
-              const SizedBox(height: 24),
-              if (appInfo.isOpenSource)
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Text(
-                    '✨ Fully Open Source',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
+              Center(
+                child: _buildTrustIndicators(context),
+              ),
             ],
           ),
         ),
-        const SizedBox(width: 80),
+        const SizedBox(width: 60),
         Expanded(
           flex: 4,
           child: Center(
@@ -253,93 +216,245 @@ class HeroSection extends StatelessWidget {
   }
 
   Widget _buildCTAs(BuildContext context) {
-    return Wrap(
-      spacing: 16,
-      runSpacing: 12,
-      crossAxisAlignment: WrapCrossAlignment.center,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        _HoverableButton(
-          onTap: () => launchUrl(Uri.parse(appInfo.appStoreUrl)),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(12),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset(
-                  'assets/logos/appstore_badge.png',
-                  height: 24,
-                  fit: BoxFit.contain,
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  'App Store',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
+        Text(
+          'Get Started Today',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            color: Colors.white.withOpacity(0.9),
+            fontWeight: FontWeight.w500,
+            fontSize: 18,
+            letterSpacing: 0.3,
           ),
+          textAlign: TextAlign.center,
         ),
-        _HoverableButton(
-          onTap: () => launchUrl(Uri.parse(appInfo.googlePlayUrl)),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(12),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
+        const SizedBox(height: 24),
+        Center(
+          child: Wrap(
+            spacing: 16,
+            runSpacing: 12,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            alignment: WrapAlignment.center,
+            children: [
+            _HoverableButton(
+              onTap: () => launchUrl(Uri.parse(appInfo.appStoreUrl)),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.15),
+                      blurRadius: 12,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset(
-                  'assets/logos/googleplay_badge.png',
-                  height: 24,
-                  fit: BoxFit.contain,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset(
+                      'assets/logos/appstore_badge.png',
+                      height: 28,
+                      fit: BoxFit.contain,
+                    ),
+                    const SizedBox(width: 12),
+                    Text(
+                      'App Store',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black87,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 8),
-                Text(
-                  'Google Play',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        _HoverableButton(
-          onTap: () => launchUrl(Uri.parse(appInfo.githubUrl)),
-          child: OutlinedButton.icon(
-            style: OutlinedButton.styleFrom(
-              foregroundColor: Colors.white,
-              side: const BorderSide(color: Colors.white, width: 1.5),
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
               ),
             ),
-            onPressed: () => launchUrl(Uri.parse(appInfo.githubUrl)),
-            icon: const Icon(Icons.code, size: 20),
-            label: const Text('View GitHub'),
+            _HoverableButton(
+              onTap: () => launchUrl(Uri.parse(appInfo.googlePlayUrl)),
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.15),
+                      blurRadius: 12,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset(
+                      'assets/logos/googleplay_badge.png',
+                      height: 28,
+                      fit: BoxFit.contain,
+                    ),
+                    const SizedBox(width: 12),
+                    Text(
+                      'Google Play',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black87,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTrustIndicators(BuildContext context) {
+    final isMobile = isPhone(context);
+    
+    if (isMobile) {
+      return Column(
+        children: [
+          // Star Rating
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                children: List.generate(5, (index) => 
+                  Padding(
+                    padding: EdgeInsets.only(right: index < 4 ? 2 : 0),
+                    child: Icon(
+                      Icons.star,
+                      color: Colors.amber,
+                      size: 16,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Text(
+                'Perfect Rating',
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Colors.white.withOpacity(0.9),
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Wrap(
+            spacing: 20,
+            runSpacing: 12,
+            alignment: WrapAlignment.center,
+            children: [
+              _buildTrustItem(
+                context,
+                icon: Icons.favorite,
+                iconColor: Colors.pinkAccent,
+                text: '1K+ Parents',
+              ),
+              _buildTrustItem(
+                context,
+                icon: Icons.block,
+                iconColor: Colors.greenAccent,
+                text: 'No Ads',
+              ),
+            ],
+          ),
+        ],
+      );
+    }
+    
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        // Star Rating
+        Row(
+          children: List.generate(5, (index) => 
+            Padding(
+              padding: EdgeInsets.only(right: index < 4 ? 2 : 0),
+              child: Icon(
+                Icons.star,
+                color: Colors.amber,
+                size: 16,
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Text(
+          'Perfect Rating',
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Colors.white.withOpacity(0.9),
+            fontWeight: FontWeight.w500,
+            fontSize: 12,
+          ),
+        ),
+        const SizedBox(width: 20),
+        Container(
+          width: 1,
+          height: 12,
+          color: Colors.white.withOpacity(0.2),
+        ),
+        const SizedBox(width: 20),
+        _buildTrustItem(
+          context,
+          icon: Icons.favorite,
+          iconColor: Colors.pinkAccent,
+          text: '1000+ Parents',
+        ),
+        const SizedBox(width: 20),
+        Container(
+          width: 1,
+          height: 12,
+          color: Colors.white.withOpacity(0.2),
+        ),
+        const SizedBox(width: 20),
+        _buildTrustItem(
+          context,
+          icon: Icons.block,
+          iconColor: Colors.greenAccent,
+          text: 'No Ads',
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTrustItem(BuildContext context, {
+    required IconData icon,
+    required Color iconColor,
+    required String text,
+  }) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(4),
+          decoration: BoxDecoration(
+            color: iconColor.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(6),
+          ),
+          child: Icon(
+            icon,
+            color: iconColor,
+            size: 14,
+          ),
+        ),
+        const SizedBox(width: 6),
+        Text(
+          text,
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Colors.white.withOpacity(0.9),
+            fontWeight: FontWeight.w500,
+            fontSize: 12,
           ),
         ),
       ],
