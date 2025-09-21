@@ -6,7 +6,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'constants/app_colors.dart';
 import 'constants/app_routes.dart';
 import 'services/language_service.dart';
-import 'services/route_service.dart';
 import 'services/deep_link_service.dart';
 import 'services/language_change_notifier.dart';
 import 'generated/l10n/app_localizations.dart';
